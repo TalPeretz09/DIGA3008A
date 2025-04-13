@@ -16,6 +16,7 @@ body
     overflow-x: hidden;
     min-height: 100vh;
     scroll-behavior: smooth;
+    padding-top: 120px;
 }
 
 h1
@@ -54,7 +55,7 @@ p
 a
 {
     font-family: 'Lora', serif;
-    color: #2E8B57;
+    color: #7234b0;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -71,14 +72,21 @@ a:hover
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 1rem 2rem;
+    padding: 0.3rem 2rem;
     background-color: #ff0f5f;
     border-bottom: 2px solid black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
   
 .top-header img 
 {
-    height: 100px;
+    height: 80px;
     width: auto;
 }
   
@@ -97,9 +105,9 @@ a:hover
     color: black;
     background-color: #d3d3d3;
     border: 2px solid black;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.4rem;
     border-radius: 2px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     box-shadow: 1px 1px 0 black;
@@ -107,10 +115,56 @@ a:hover
   
 .navbar a:hover 
 {
-    background-color: #bfbfbfa7;
+    background-color: #A9A9A9;
     color: black;
     text-decoration: none;
-    box-shadow: 2px 2px 0 black;
+    box-shadow: 3px 3px 0 black;
 }
+
+.navbar a:active 
+{
+    background-color: #B0B0B0;
+    box-shadow: 1px 1px 0 black;
+    transform: translate(1px, 1px);
+}
+
+.dwnButton
+{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #d3d3d3;
+    border: 2px solid black;
+    padding: 0.4rem 0.7rem;
+    box-shadow: 2px 2px 0 black;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+hr 
+{
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #FF77FF, #00FFFF);
+    margin: 2rem 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+  
+
+footer 
+{
+    font-family: 'VT323', monospace;
+    background-color: #ff0f5f;
+    color: #000000;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+    border-top: 2px solid #000000;
+    letter-spacing: 1px;
+    box-shadow: 0 -3px 8px #930534;
+    position: relative;
+    z-index: 1000;
+}
+  
+
   
   
