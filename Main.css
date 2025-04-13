@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Orbitron&family=Press+Start+2P&family=VT323&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff77ff, #00ffff);
+    color: #0a0a23;
+    overflow-x: hidden;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+h1
+{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+  
+h2
+{
+    font-family: 'VT323', monospace;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+  
+h3
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+  
+p
+{
+    font-family: 'Lora', serif;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
+}
+  
+a
+{
+    font-family: 'Lora', serif;
+    color: #2E8B57;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover 
+{
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+  
+header img 
+{
+    height: 100px;
+    width: auto;
+}
+  
+.navbar ul 
+{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar a 
+{
+    font-family: 'Lora', serif;
+    color: #2E8B57;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.navbar a:hover 
+{
+    color: #00ffff;
+    text-decoration: underline;
+}
+  
+  
