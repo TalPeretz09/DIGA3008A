@@ -16,7 +16,7 @@ h1, h2
 
 .u-photo 
 {
-    width: 80%;
+    width: 40%;
     max-width: 500px;
     height: auto;
     border-radius: 10px;
@@ -40,10 +40,8 @@ figcaption
 
 hr 
 {
-    margin: 2rem 0;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
     width: 80%;
     max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-  

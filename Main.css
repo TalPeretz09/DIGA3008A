@@ -55,6 +55,7 @@ p
 a
 {
     font-family: 'Lora', serif;
+    font-weight: bold;
     color: #7234b0;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -62,6 +63,7 @@ a
 
 a:hover 
 {
+    font-weight: bold;
     color: #00ffff;
     text-decoration: underline;
 }
