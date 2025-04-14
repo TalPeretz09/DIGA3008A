@@ -6,6 +6,7 @@
     <meta name="author" content="Tal Peretz" />
     <meta name="description" content="Read my latest blog posts on web development, design, and the internet.">
     <link rel="stylesheet" href="../Main.css">
+    <link rel="stylesheet" href="Styles/blogs.css">
     <title>Blogs</title>
 </head>
 
@@ -26,19 +27,22 @@
         </div>
 
         <h1>Blogs</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#Blog1">Blog 1</a></li>
-                <li><a href="#Blog2">Blog 2</a></li>
-                <li><a href="#Blog3">Blog 3</a></li>
-                <li><a href="#Blog4">Blog 4</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
+        <nav>
+            <label for="blog-nav">Blogs:</label>
+            <select id="blog-nav" onchange="location.hash=this.value;">
+                <option value="#Blog1">Blog 1</option>
+                <option value="#Blog2">Blog 2</option>
+                <option value="#Blog3">Blog 3</option>
+                <option value="#Blog4">Blog 4</option>
+                <option value="#Blog5">Blog 5</option>
+            </select>
+        </nav>
+        
         <hr/>
+
         <section>
             <article id="Blog1" class="h-entry">
             <h2 class="p-name">1&#93 From Browsing to Building: My Journey into Web Development</h2>
@@ -167,7 +171,7 @@
                     <h3>Wireframe and Design Thoughts</h3>
 
                     <figure>
-                        <img src="Images/Wireframe_B2.png" width="600" height="450" alt="Homepage Wireframe" />
+                        <img src="Images/Wireframe_B2.png" alt="Homepage Wireframe" />
                         <figcaption>Homepage Wireframe</figcaption>
                     </figure>
 

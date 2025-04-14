@@ -45,3 +45,9 @@ hr
     margin: 1rem auto;
     text-align: center;
 }
+
+main p
+{
+    text-align: center !important;
+}
+  
