@@ -46,46 +46,7 @@ hr
     max-width: 600px;
 }
 
-/* Homepage - Media Queries */
 
-/* Mobile Styles (up to 600px) */
-@media screen and (max-width: 600px) {
-    main {
-        padding: 8rem 0.5rem 1rem;
-    }
-
-    .u-photo {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    figcaption {
-        font-size: 0.9rem;
-    }
-
-    hr {
-        width: 90%;
-    }
-}
-
-/* Tablet Styles (601px to 1024px) */
-@media screen and (max-width: 1024px) and (min-width: 601px) {
-    main {
-        padding: 5rem 1rem 1.5rem;
-    }
-
-    .u-photo {
-        width: 90%;
-    }
-
-    figcaption {
-        font-size: 1rem;
-    }
-
-    hr {
-        width: 85%;
-    }
-}
 
 
   
