@@ -169,7 +169,7 @@ footer
 /* Mobile Styles (up to 600px) */
 @media screen and (max-width: 600px) {
     body {
-        padding-top: 200px; /* Reduce space at the top for mobile */
+        padding-top: 300px; /* Reduce space at the top for mobile */
     }
 
     .top-header {
