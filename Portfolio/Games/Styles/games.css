@@ -46,11 +46,17 @@ hr
     text-align: center;
 }
 
-p
+.p-summary, .p-meta 
 {
-    text-align: center !important;
-    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: center; /* Center the text inside the paragraph */
+    max-width: 60ch;    /* Optional: limits line width for readability */
+    margin-left: auto;  /* Center the block itself horizontally */
+    margin-right: auto;
 }
+
 
 #games-nav {
     font-family: 'Lora', serif;
