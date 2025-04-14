@@ -1,0 +1,47 @@
+main 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 2rem 1rem;
+}
+
+h1, h2 
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+img
+{
+    width: 30%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+figure 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+hr 
+{
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dwnButton 
+{
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
