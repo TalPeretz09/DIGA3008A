@@ -136,15 +136,26 @@ label[for="blog-nav"] {
     margin-right: 0.5rem;
 }
 
-
-
-@media (max-width: 768px) 
+@media screen and (max-width: 600px)
 {
-    article.h-entry {
-        padding: 1rem;
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
-    article.h-entry h1 {
+    main {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    article.h-entry {
+        padding: 1rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    h1 {
         font-size: 2rem;
     }
 
