@@ -33,8 +33,36 @@
     </header>
 
     <main>
+        <nav>
+            <label for="designs-nav">Designs:</label>
+            <select id="designs-nav" onchange="location.hash=this.value;">
+                <option value="#MyStyleProcess">My Style Process</option>
+                <option value="#FirstWireframes">First Wireframes</option>
+                <option value="#WebpageWireframes">Webpage Wireframes</option>
+                <option value="#PortfolioWebpageWireframes">Portfolio Webpage Wireframes</option>
+                <option value="#Logos">Logos</option>
+                <option value="#ColourPalettes">Colour Palletes</option>
+                <option value="#Fonts">Fonts</option>
+                <option value="#Buttons">Buttons</option>
+                <option value="#Icons">Icons</option>
+                <option value="#ExtraFeatures">Extra Features</option>
+                <option value="#MoreReferenceMaterial">More Reference Material</option>
+                <option value="#MySiteInspirations">My Site Inspirations</option>
+                <option value="#MockGroupStyleGuide">Mock Group Style Guide</option>
+                <option value="Backgrounds">Backgrounds</option>
+                <option value="#Buttons2">Updated Buttons</option>
+                <option value="#ButtonStates">Button States</option>
+                <option value="#CardStates">Card States</option>
+                <option value="#FontSizes">Font Sizes</option>
+                <option value="#MusicPlayer">Music Player</option>
+                <option value="#UpdatedWireframesWithNavbars">NavBar Wireframes</option>
+                <option value="#SpacingAndAlignment">Spacing and Alignment</option>
+
+            </select>
+        </nav>
+
         <section class="h-entry e-content">
-            <h2 class="p-name">My Style Process</h2>
+            <h2 class="p-name" id="MyStyleProcess">My Style Process</h2>
             <p>
                 For my website's visual style, I'm aiming for a vaporwave aesthetic that combines minimalism with vibrant colours 
                 and retro imagery. Vaporwave is often associated with geometric shapes like squares and polygons, representing my 
@@ -42,7 +70,7 @@
                 This aesthetic allows for an engaging visual experience while maintaining a clean and modern design.
             </p>
 
-            <h2 class="p-name">First Wireframe</h2>
+            <h2 class="p-name" id="FirstWireframes">First Wireframe</h2>
             <figure>
                 <img src="Images/FirstHomepageWireframe.png" alt="First Homepage Wireframe" width="500" height="300">
                 <figcaption>First Homepage Wireframe</figcaption>
@@ -58,7 +86,7 @@
                 that immediately captures the visitor's attention.
             </p>
 
-            <h2 class="p-name">Webpage Wireframes</h2>
+            <h2 class="p-name" id="WebpageWireframes">Webpage Wireframes</h2>
             <figure>
                 <img src="Images/NewWireframes.png" alt="Page Wireframes" width="650" height="360">
                 <figcaption>Primary Pages Wireframes</figcaption>
@@ -91,7 +119,7 @@
                 ensuring a focused and well-structured presentation of my work.
             </p>
 
-            <h2 class="p-name">Portfolio Webpage Wireframes</h2>
+            <h2 class="p-name" id="PortfolioWebpageWireframes">Portfolio Webpage Wireframes</h2>
             <figure>
                 <img src="Images/NewWireframesSUB.png" alt="Portfolio Pages Wireframes" width="650" height="360">
                 <figcaption>Portfolio Sub-Pages Wireframes</figcaption>
@@ -103,7 +131,7 @@
                 The fight-stick design page will include each piece of fight stick art I have created with some info on each design to the right of each image.
             </p>
 
-            <h2 class="p-name">Logos</h2>
+            <h2 class="p-name" id="Logos">Logos</h2>
             <figure>
                 <img src="Images/Logo.png" alt="Logos" width="1200" height="250">
                 <figcaption>Logos - Pink and White Variants</figcaption>
@@ -114,7 +142,7 @@
                 clickable element, allowing users to return to the homepage.
             </p>
 
-            <h2 class="p-name">Colour Palettes</h2>
+            <h2 class="p-name" id="ColourPalettes">Colour Palettes</h2>
             <figure>
                 <img src="Images/ColourPaletteWhite.png" alt="Colour Palettes" width="700" height="400">
                 <figcaption>Choice of Colour Palette</figcaption>
@@ -131,7 +159,7 @@
                 the more intense colors but fits the vaporwave mood to add variety and balance.
             </p>
 
-            <h2 class="p-name">Fonts</h2>
+            <h2 class="p-name" id="Fonts">Fonts</h2>
             <figure>
                 <img src="Images/Fonts.png" alt="Fonts" width="650" height="360">
                 <figcaption>Choice of Fonts</figcaption>
@@ -144,7 +172,7 @@
                 may be used for accents, keeping the design playful and on-brand.
             </p>
 
-            <h2 class="p-name">Buttons</h2>
+            <h2 class="p-name" id="Buttons">Buttons</h2>
             <figure>
                 <img src="Images/Buttons.png" alt="Buttons" width="1150" height="250">
                 <figcaption>Buttons - Blue and Pink Variants</figcaption>
@@ -156,7 +184,7 @@
                 are designed to be both visually appealing and functional.
             </p>
 
-            <h2 class="p-name">Icons</h2>
+            <h2 class="p-name" id="Icons">Icons</h2>
             <figure>
                 <img src="Images/VW_1.png" alt="Icons" width="650" height="360">
                 <figcaption>Icons</figcaption>
@@ -169,7 +197,7 @@
                 site feel unique, immersive, and true to the aesthetic I want to create.
             </p>
 
-            <h2 class="p-name">Extra Features</h2>
+            <h2 class="p-name" id="ExtraFeatures">Extra Features</h2>
             <figure>
                 <img src="Images/VW_3.png" alt="Vaporwave Window" width="900" height="500">
                 <figcaption>Potential Window Design / Extra Features</figcaption>
@@ -185,13 +213,13 @@
                 my work but also reflects my passion for design, gaming, and digital art.
             </p>
 
-            <h2 class="p-name">More Reference Material</h2>
+            <h2 class="p-name" id="MoreReferenceMaterial">More Reference Material</h2>
             <figure>
                 <img src="Images/VW_2.png" alt="Vaporwave Images" width="650" height="360">
                 <figcaption>Reference Material</figcaption>
             </figure>
             
-            <h2 class="p-name">My Site Inspirations</h2>
+            <h2 class="p-name" id="MySiteInspirations">My Site Inspirations</h2>
             <p>
             <a class="u-url" href="https://ne0nbandit.neocities.org/" target="_blank">https://ne0nbandit.neocities.org/</a> |
             <a class="u-url" href="https://plaza.one/" target="_blank">https://plaza.one/</a> | 
@@ -203,7 +231,7 @@
         <hr/>
 
         <section class="h-entry e-content">
-            <h2 class="p-name">Mock Group Style Guide</h2>
+            <h2 class="p-name" id="MockGroupStyleGuide">Mock Group Style Guide</h2>
             <figure>
                 <img src="Images/Group_Font.png" alt="Group Font Selection" width="335" height="360">
                 <figcaption>Group Font Selection</figcaption>
@@ -229,7 +257,7 @@
         <hr/>
 
         <section class="h-entry e-content">
-            <h2 class="p-name">Backgrounds</h2>
+            <h2 class="p-name" id="Backgrounds">Backgrounds</h2>
             <figure>
                 <img src="Images/Backgrounds.png" alt="Colour Backgrounds">
                 <figcaption>Colour Backgrounds</figcaption>
@@ -240,7 +268,7 @@
                  are bold yet synthetic and emotional.
             </p>
 
-            <h2 class="p-name">Buttons</h2>
+            <h2 class="p-name" id="Buttons2">Buttons</h2>
             <figure>
                 <img src="Images/ButtonsUpdate.png" alt="Buttons">
                 <figcaption>Button Icons</figcaption>
@@ -252,7 +280,7 @@
                 nav bar or something similar respectively. 
             </p>
 
-            <h2 class="p-name">Button States</h2>
+            <h2 class="p-name" id="ButtonStates">Button States</h2>
             <figure>
                 <img src="Images/ButtonStates.png" alt="Button States">
                 <figcaption>Button States</figcaption>
@@ -265,7 +293,7 @@
                 accidentally pressed the button.
             </p>
 
-            <h2 class="p-name">Card States</h2>
+            <h2 class="p-name" id="CardStates">Card States</h2>
             <figure>
                 <img src="Images/CardStates.png" alt="Card States">
                 <figcaption>Card States</figcaption>
@@ -277,7 +305,7 @@
                 to reflect that it can be clicked on.
             </p>
 
-            <h2 class="p-name">Font Sizes</h2>
+            <h2 class="p-name" id="FontSizes">Font Sizes</h2>
             <figure>
                 <img src="Images/FontSizes.png" alt="Font Sizes">
                 <figcaption>Font Sizes</figcaption>
@@ -291,7 +319,7 @@
                 layout that supports both usability and aesthetic.
             </p>
 
-            <h2 class="p-name">Music Player</h2>
+            <h2 class="p-name" id="MusicPlayer">Music Player</h2>
             <figure>
                 <img src="Images/Music Player.png" alt="Music Player">
                 <figcaption>Music Player</figcaption>
@@ -304,7 +332,7 @@
                 vibe from the moment they land on the page.
             </p>
 
-            <h2 class="p-name">Updated Wireframes with Navbars</h2>
+            <h2 class="p-name" id="UpdatedWireframesWithNavbars">Updated Wireframes with Navbars</h2>
             <figure>
                 <img src="Images/WireframesUp1.png" alt="Wireframe Navbars 1">
             </figure>
@@ -322,7 +350,7 @@
                 more annotation allowing for greater detail within the actual pages.
             </p>
 
-            <h2 class="p-name">Spacing and Alignment</h2>
+            <h2 class="p-name" id="SpacingAndAlignment">Spacing and Alignment</h2>
             <h3>Alignment Rules</h3>
             <ul>
                 <li>Main Headers: Centered or Left-Aligned</li>
