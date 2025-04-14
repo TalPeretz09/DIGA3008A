@@ -15,7 +15,7 @@ main
 }
 
 
-article.h-entry 
+section.h-entry 
 {
     background: linear-gradient(135deg, #A3D9FF 0%, #E1B3FF 100%);
     border-radius: 1rem;
@@ -37,7 +37,7 @@ h1
     margin-bottom: 1rem;
 }
 
-article.h-entry h2 
+section.h-entry h2 
 {
     font-family: 'VT323', monospace;
     font-size: 2rem;
@@ -46,7 +46,7 @@ article.h-entry h2
     margin-bottom: 1rem;
 }
 
-article.h-entry h3 
+section.h-entry h3 
 {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.2rem;
@@ -55,7 +55,7 @@ article.h-entry h3
     margin-bottom: 0.5rem;
 }
 
-article.h-entry p 
+section.h-entry p 
 {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -64,14 +64,14 @@ article.h-entry p
 }
 
 
-article.h-entry time,
-article.h-entry .date,
-article.h-entry .datetime 
+section.h-entry time,
+section.h-entry .date,
+section.h-entry .datetime 
 {
     color: black;
 }
 
-article.h-entry img 
+section.h-entry img 
 {
     max-width: 100%;
     max-height: 600px;
@@ -83,7 +83,7 @@ article.h-entry img
 }
 
 
-article.h-entry ul
+section.h-entry ul
 {
     color: black;
     font-family: 'Lora', serif;
@@ -93,25 +93,25 @@ article.h-entry ul
     margin-bottom: 1rem;
 }
 
-article.h-entry li 
+section.h-entry li 
 {
     margin-bottom: 0.5rem;
 }
 
-article.h-entry ul li::marker 
+section.h-entry ul li::marker 
 {
     color: #FF77FF;
 }
 
 
-article.h-entry a 
+section.h-entry a 
 {
     color: #FF77FF;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-article.h-entry a:hover 
+section.h-entry a:hover 
 {
     color: #00FFFF;
 }
@@ -136,31 +136,4 @@ label[for="blog-nav"] {
     margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 600px)
-{
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
 
-    main {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-    article.h-entry {
-        padding: 1rem;
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    article.h-entry h2 {
-        font-size: 1.5rem;
-    }
-}
