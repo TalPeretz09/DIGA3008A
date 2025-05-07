@@ -167,6 +167,29 @@ footer
     z-index: 1000;
 }
 
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #9B4DFF; /* Electric Purple */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #FF77FF;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #backToTopBtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #FF77FF;
+  }
+  
+
 /* Mobile Styles (up to 600px) */
 @media screen and (max-width: 600px) {
     body {
