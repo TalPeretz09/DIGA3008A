@@ -17,6 +17,7 @@ body
     min-height: 100vh;
     scroll-behavior: smooth;
     padding-top: 120px;
+    cursor: url(vaporwave.cur), auto;
 }
 
 h1
