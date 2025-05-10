@@ -1,19 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('backToTopBtn');
   
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
+    window.addEventListener('scroll', () => 
+    {
+      if (window.scrollY > 200) 
+      {
         backToTopBtn.style.display = 'block';
-      } else {
+      } 
+      else 
+      {
         backToTopBtn.style.display = 'none';
       }
     });
   
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+    backToTopBtn.addEventListener('click', () => 
+    {
+      window.scrollTo({top: 0, behavior: 'smooth'});
     });
   });
   

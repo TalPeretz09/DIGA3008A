@@ -180,7 +180,7 @@ footer
     cursor: pointer;
     box-shadow: 0 0 10px #FF77FF;
     display: none; /* Hidden by default */
-    z-index: 1000;
+    z-index: 2000;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   

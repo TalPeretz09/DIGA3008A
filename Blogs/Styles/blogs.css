@@ -106,14 +106,14 @@ section.h-entry ul li::marker
 
 section.h-entry a 
 {
-    color: #FF77FF;
+    color: #9f009f;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 section.h-entry a:hover 
 {
-    color: #00FFFF;
+    color: #00a4a4;
 }
 
 #blog-nav {
