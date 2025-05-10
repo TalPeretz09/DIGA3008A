@@ -1,0 +1,67 @@
+/* Contact Page Specific Styling */
+
+#contact 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px #ff77ff;
+  backdrop-filter: blur(8px);
+}
+
+#contact address 
+{
+  font-style: normal;
+  font-family: 'Lora', serif;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+}
+
+#contact strong 
+{
+  color: #4b00ad; /* Electric Purple */
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#contact a 
+{
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+#contact a:hover 
+{
+  color: rgb(159, 0, 149);
+  text-decoration: none;
+  transform: scale(1.05);
+}
+
+h1
+{
+ text-align: center;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  #contact address {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
