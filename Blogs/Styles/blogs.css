@@ -108,7 +108,7 @@ section.h-entry a
 {
     color: #9f009f;
     text-decoration: underline;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 section.h-entry a:hover 

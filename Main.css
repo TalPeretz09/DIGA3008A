@@ -57,7 +57,7 @@ a
 {
     font-family: 'Lora', serif;
     font-weight: bold;
-    color: #7234b0;
+    color: #9f009f;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
@@ -65,7 +65,7 @@ a
 a:hover 
 {
     font-weight: bold;
-    color: #00ffff;
+    color: #00a4a4;
     text-decoration: underline;
 }
 
@@ -129,6 +129,14 @@ a:hover
     background-color: #B0B0B0;
     box-shadow: 1px 1px 0 black;
     transform: translate(1px, 1px);
+}
+
+.navbar a.active {
+    background-color: #FF77FF;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #9B4DFF;
+    transform: scale(1.05);
 }
 
 .dwnButton

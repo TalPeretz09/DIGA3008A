@@ -37,9 +37,10 @@
 
 .portfolio-card p {
     font-family: 'Lora', serif;
-    text-align: justify;
+    text-align: left;
     font-size: 1rem;
-    color: #E1B3FF;
+    color: #00e7e7;
+    hyphens: auto;
 }
 
 h1

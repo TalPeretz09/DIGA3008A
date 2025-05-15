@@ -46,7 +46,13 @@ hr
     max-width: 600px;
 }
 
-
+blockquote
+{
+    max-width: 80ch;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.125rem;
+}
 
 
   
