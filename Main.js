@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navLinks.forEach(link => {
     // Convert each href into a fully resolved path
-    const hrefPath = new URL(link.getAttribute("href"), window.location.href).pathname;
+    const hrefPath = new URL(link.getAttribute("href"), window.location.origin).pathname;
 
     // Check if the current page is the link or inside its folder
     if (currentPath === hrefPath || currentPath.startsWith(hrefPath.replace(/index\.html$/, ''))) {
