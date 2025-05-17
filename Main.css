@@ -69,7 +69,7 @@ a:hover
     text-decoration: underline;
 }
 
-.top-header 
+.top-header /*Entire Top Navbar including the logo and navbar buttons*/
 {
     display: flex;
     align-items: center;
@@ -93,7 +93,7 @@ a:hover
     width: auto;
 }
   
-.navbar ul 
+.navbar ul /*Specifically the navbar buttons*/
 {
     list-style: none;
     display: flex;
@@ -139,7 +139,7 @@ a:hover
     transform: scale(1.05);
 }
 
-.dwnButton
+.dwnButton /*Download Buttons (PDF,PSD,etc.)*/
 {
     font-family: 'Press Start 2P', cursive;
     background-color: #d3d3d3;
