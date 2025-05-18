@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-    // ============================
+  // ============================
   // Smooth Hide Navbar on Scroll Down, Show on Scroll Up
   // ============================
   let lastScrollY = window.scrollY;

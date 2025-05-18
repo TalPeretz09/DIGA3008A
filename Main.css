@@ -86,12 +86,13 @@ a:hover
     z-index: 1000;
 
     transition: top 0.15s ease-in-out;
+    transform: translateY(0);
 
 }
 
 .top-header.hidden
 {
-    top: -100px;
+    transform: translateY(-100%);
 }
   
 .top-header img 
