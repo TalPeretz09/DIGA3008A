@@ -104,4 +104,18 @@ section.h-entry a:hover
     color: #00a4a4;
 }
 
+.nav-button
+{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #d3d3d3;
+    border: 2px solid black;
+    padding: 0.4rem 0.7rem;
+    box-shadow: 2px 2px 0 black;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: url(Cursors/Link\ Select.cur), pointer;
+    margin-bottom: 1rem;
+}
+
 
