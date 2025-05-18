@@ -104,6 +104,13 @@ section.h-entry a:hover
     color: #00a4a4;
 }
 
+.PN-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+
 .nav-button
 {
     font-family: 'Press Start 2P', cursive;
@@ -115,7 +122,6 @@ section.h-entry a:hover
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     cursor: url(Cursors/Link\ Select.cur), pointer;
-    margin-bottom: 1rem;
 }
 
 

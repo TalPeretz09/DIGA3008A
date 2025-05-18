@@ -85,6 +85,13 @@ a:hover
     width: 100%;
     z-index: 1000;
 
+    transition: top 0.15s ease-in-out;
+
+}
+
+.top-header.hidden
+{
+    top: -100px;
 }
   
 .top-header img 

@@ -30,4 +30,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+    // ============================
+  // Smooth Hide Navbar on Scroll Down, Show on Scroll Up
+  // ============================
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const navbar = document.querySelector('.top-header');
+  const scrollThreshold = 10;
+
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+
+    if (Math.abs(currentScrollY - lastScrollY) > scrollThreshold) {
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        navbar.classList.add('hidden');
+      } else {
+        // Scrolling up
+        navbar.classList.remove('hidden');
+      }
+      lastScrollY = currentScrollY;
+    }
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  });
+
+
+
 });
