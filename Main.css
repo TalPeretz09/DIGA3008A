@@ -217,7 +217,7 @@ footer
         flex-direction: column;
         padding: 1rem;
         transform: translateY(0);
-        transition: top 0.25s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
 
     .top-header.hidden{
