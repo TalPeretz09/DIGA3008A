@@ -91,7 +91,7 @@ a:hover
 
 .top-header.hidden
 {
-    top: -100px;
+    top: -100%;
 }
   
 .top-header img 
@@ -216,11 +216,7 @@ footer
     .top-header {
         flex-direction: column;
         padding: 1rem;
-        translate: translateY(0);
-    }
-
-    .top-header.hidden {
-        translate: translateY(-100%);
+        
     }
 
     .navbar ul {
