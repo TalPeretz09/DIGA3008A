@@ -86,13 +86,12 @@ a:hover
     z-index: 1000;
 
     transition: top 0.15s ease-in-out;
-    transform: translateY(0);
 
 }
 
 .top-header.hidden
 {
-    transform: translateY(-100%);
+    top: -100px;
 }
   
 .top-header img 
@@ -217,6 +216,11 @@ footer
     .top-header {
         flex-direction: column;
         padding: 1rem;
+        translate: translateY(0);
+    }
+
+    .top-header.hidden {
+        translate: translateY(-100%);
     }
 
     .navbar ul {
