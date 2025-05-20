@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ============================
-  // Smooth Hide Navbar on Scroll Down, Show on Scroll Up
+  // Hamburger Menu Functionality
   // ============================
   const toggleButton = document.getElementById("floatingHamburger");
   const floatingMenu = document.getElementById("floatingMenu");
