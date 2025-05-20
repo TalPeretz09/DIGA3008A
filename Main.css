@@ -349,6 +349,15 @@ footer
     p {
         font-size: 1rem;
     }
+
+    .lightbox-nav {
+    position: static;
+    transform: none;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: auto;
+  }
 }
 
 /* Tablet Styles (601px to 1024px) */
