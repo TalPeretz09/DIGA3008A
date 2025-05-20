@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const img = images[index];
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt || 'Enlarged view';
-    counter.textContent = `${index + 1} / ${images.length}`;
+    counter.textContent = (index + 1) + " / " + images.length;
   }
 
   function openLightbox(index) {
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLightbox(currentIndex);
     overlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden'; // Prevent background scroll
-    closeBtn.focus(); // Accessibility: focus on close button
   }
 
   function closeLightbox() {
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLightbox(currentIndex);
   }
 
-  // Image click opens lightbox
+  //Image click opens lightbox
   images.forEach((img, index) => {
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => openLightbox(index));

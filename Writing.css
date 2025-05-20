@@ -104,7 +104,8 @@ section.h-entry a:hover
     color: #00a4a4;
 }
 
-.PN-nav {
+/*Previous and Next Buttons*/
+.PN-nav { 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,101 +123,5 @@ section.h-entry a:hover
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     cursor: url(Cursors/Link\ Select.cur), pointer;
-}
-
-/* Overlay background */
-.lightbox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(15, 5, 30, 0.696);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1000;
-  backdrop-filter: blur(4px);
-}
-
-.lightbox-overlay.hidden {
-  display: none;
-}
-
-/* Enlarged image */
-.lightbox-image {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px #9B4DFF, 0 0 40px #00FFFF;
-}
-
-/* Close button */
-.lightbox-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 2.5rem;
-  color: #ffffff;
-  cursor: pointer;
-  text-shadow: 0 0 8px #FF77FF, 0 0 12px #9B4DFF;
-  transition: transform 0.2s ease;
-}
-
-.lightbox-close:hover,
-.lightbox-close:focus {
-  transform: scale(1.2);
-  outline: none;
-}
-
-/* Navigation buttons container */
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-  transform: translateY(-50%);
-}
-
-/* Arrow buttons */
-.lightbox-arrow {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #A3D9FF;
-  border-radius: 50%;
-  color: #FFFFFF;
-  font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-shadow: 0 0 6px #00FFFF;
-  transition: background 0.2s, transform 0.2s;
-}
-
-.lightbox-arrow:hover,
-.lightbox-arrow:focus {
-  background-color: #9B4DFF;
-  transform: scale(1.1);
-  outline: none;
-}
-
-/* Image counter */
-.lightbox-counter {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'VT323', monospace;
-  font-size: 1.3rem;
-  color: #E1B3FF;
-  text-shadow: 0 0 4px #FF77FF;
 }
 

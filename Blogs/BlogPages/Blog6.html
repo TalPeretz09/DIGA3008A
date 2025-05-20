@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../Writing.css">
     <script src="../../Main.js"></script>
     <script src="../blogs.js"></script>
+    <script src="../../Designs/lightbox.js"></script>
     <title>Blog 6</title>
 </head>
 
@@ -66,6 +67,18 @@
         </div>
 
         <button id="backToTopBtn" aria-label="Back to top">↑</button>
+
+        <div id="lightboxOverlay" class="lightbox-overlay hidden" role="dialog" aria-modal="true">
+            <button id="lightboxClose" class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img id="lightboxImage" class="lightbox-image" src="" alt="Enlarged view">
+            
+            <div class="lightbox-nav">
+                <button id="lightboxPrev" class="lightbox-arrow" aria-label="Previous image">&#10094;</button>
+                <button id="lightboxNext" class="lightbox-arrow" aria-label="Next image">&#10095;</button>
+            </div>
+
+            <div id="lightboxCounter" class="lightbox-counter">1 / 1</div>
+        </div>
     </main>
 
     <footer>
