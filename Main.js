@@ -62,12 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ============================
-  // Hamburger Menu Functionality
-  // ============================
-  const toggleButton = document.getElementById("floatingHamburger");
-  const floatingMenu = document.getElementById("floatingMenu");
+// ============================
+// Hamburger Menu Functionality
+// ============================
+const toggleButton = document.getElementById("floatingHamburger");
+const floatingMenu = document.getElementById("floatingMenu");
 
+if (toggleButton && floatingMenu) {
   // Toggle menu visibility
   toggleButton.addEventListener("click", () => {
     floatingMenu.classList.toggle("hidden");
@@ -79,17 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
       floatingMenu.classList.add("hidden");
     });
   });
+}
 
-  // Smooth scroll behavior
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    });
+// Smooth scroll behavior for internal links (still global)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
   });
+});
+
 
 
 
