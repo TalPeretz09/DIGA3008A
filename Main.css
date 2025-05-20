@@ -303,6 +303,58 @@ footer
   color: #E1B3FF;
   text-shadow: 0 0 4px #FF77FF;
 }
+
+/* Floating hamburger button */
+.floating-hamburger {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1001;
+  background-color: #9B4DFF;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  box-shadow: 0 0 10px #FF77FF, 0 0 20px #00FFFF;
+  cursor: pointer;
+}
+
+/* Floating menu box */
+.floating-menu {
+  position: fixed;
+  bottom: 6rem;
+  left: 1.5rem;
+  background-color: rgba(15, 5, 30, 0.95);
+  border: 2px solid #A3D9FF;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 1000;
+  box-shadow: 0 0 10px #FF77FF;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Menu links */
+.floating-menu a {
+  color: #A3D9FF;
+  font-family: 'Lora', serif;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.floating-menu a:hover {
+  color: #FF7F50;
+}
+
+/* Hidden by default */
+.floating-menu.hidden {
+  display: none;
+}
+
   
 
 /* Mobile Styles (up to 600px) */

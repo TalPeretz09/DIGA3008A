@@ -10,31 +10,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentIndex = 0;
 
-  function updateLightbox(index) {
+  function updateLightbox(index) 
+  {
     const img = images[index];
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt || 'Enlarged view';
     counter.textContent = (index + 1) + " / " + images.length;
   }
 
-  function openLightbox(index) {
+  function openLightbox(index) 
+  {
     currentIndex = index;
     updateLightbox(currentIndex);
     overlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden'; // Prevent background scroll
   }
 
-  function closeLightbox() {
+  function closeLightbox() 
+  {
     overlay.classList.add('hidden');
     document.body.style.overflow = ''; // Re-enable scroll
   }
 
-  function showNext() {
+  function showNext() 
+  {
     currentIndex = (currentIndex + 1) % images.length;
     updateLightbox(currentIndex);
   }
 
-  function showPrev() {
+  function showPrev() 
+  {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateLightbox(currentIndex);
   }
@@ -52,9 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Keyboard controls
   document.addEventListener('keydown', (e) => {
-    if (overlay.classList.contains('hidden')) return;
+    if (overlay.classList.contains('hidden'))
+    {
+      return;
+    } 
 
-    switch (e.key) {
+    switch (e.key) 
+    {
       case 'Escape':
         closeLightbox();
         break;

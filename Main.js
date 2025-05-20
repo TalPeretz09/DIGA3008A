@@ -62,6 +62,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // ============================
+  // Smooth Hide Navbar on Scroll Down, Show on Scroll Up
+  // ============================
+  const toggleButton = document.getElementById("floatingHamburger");
+  const floatingMenu = document.getElementById("floatingMenu");
+
+  // Toggle menu visibility
+  toggleButton.addEventListener("click", () => {
+    floatingMenu.classList.toggle("hidden");
+  });
+
+  // Close menu when a link is clicked
+  floatingMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      floatingMenu.classList.add("hidden");
+    });
+  });
+
+  // Smooth scroll behavior
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
 
 
 });
