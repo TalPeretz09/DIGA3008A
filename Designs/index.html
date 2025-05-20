@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Main.css">
     <link rel="stylesheet" href="../Writing.css">
     <script src="../Main.js"></script>
+    <script src="designs.js"></script>
     <title>Designs</title>
 </head>
 
@@ -340,6 +341,17 @@
         </section>
 
         <button id="backToTopBtn" aria-label="Back to top">↑</button>
+
+        <div id="lightboxOverlay" class="lightbox-overlay hidden">
+            <span id="lightboxClose" class="lightbox-close">&times;</span>
+            <img id="lightboxImage" class="lightbox-image" src="" alt="Enlarged view">
+        <div class="lightbox-nav">
+            <span id="lightboxPrev" class="lightbox-arrow">&#10094;</span>
+            <span id="lightboxNext" class="lightbox-arrow">&#10095;</span>
+        </div>
+        <div id="lightboxCounter" class="lightbox-counter">1 / 1</div>
+        </div>
+
     </main>
 
     <footer>
