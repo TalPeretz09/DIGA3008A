@@ -233,6 +233,7 @@ footer
   max-height: 80vh;
   border-radius: 1rem;
   box-shadow: 0 0 20px #9B4DFF, 0 0 40px #00FFFF;
+  pointer-events: none;
 }
 
 /*Close button*/

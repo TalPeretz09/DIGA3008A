@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const allImages = Array.from(document.querySelectorAll('img'));
+  const allImages = Array.from(document.querySelectorAll('img:not(#lightboxImage)'));
   const images = allImages.slice(1); //Skip first image (Nav Bar logo)
   const overlay = document.getElementById('lightboxOverlay');
   const lightboxImg = document.getElementById('lightboxImage');
