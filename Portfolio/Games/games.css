@@ -43,9 +43,8 @@ hr
     font-size: 1rem;
     margin-bottom: 1rem;
     line-height: 1.6;
-    text-align: center; /* Center the text inside the paragraph */
-    max-width: 60ch;    /* Optional: limits line width for readability */
-    margin-left: auto;  /* Center the block itself horizontally */
+    max-width: 60ch;
+    margin-left: auto; 
     margin-right: auto;
 }
 

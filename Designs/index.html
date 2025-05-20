@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../Main.css">
     <link rel="stylesheet" href="../Writing.css">
     <script src="../Main.js"></script>
-    <script src="designs.js"></script>
+    <script src="lightbox.js"></script>
     <title>Designs</title>
 </head>
 
@@ -340,18 +340,19 @@
 
         </section>
 
-        <button id="backToTopBtn" aria-label="Back to top">↑</button>
-
-        <div id="lightboxOverlay" class="lightbox-overlay hidden">
-            <span id="lightboxClose" class="lightbox-close">&times;</span>
+        <div id="lightboxOverlay" class="lightbox-overlay hidden" role="dialog" aria-modal="true">
+            <button id="lightboxClose" class="lightbox-close" aria-label="Close lightbox">&times;</button>
             <img id="lightboxImage" class="lightbox-image" src="" alt="Enlarged view">
-        <div class="lightbox-nav">
-            <span id="lightboxPrev" class="lightbox-arrow">&#10094;</span>
-            <span id="lightboxNext" class="lightbox-arrow">&#10095;</span>
-        </div>
-        <div id="lightboxCounter" class="lightbox-counter">1 / 1</div>
+            
+            <div class="lightbox-nav">
+                <button id="lightboxPrev" class="lightbox-arrow" aria-label="Previous image">&#10094;</button>
+                <button id="lightboxNext" class="lightbox-arrow" aria-label="Next image">&#10095;</button>
+            </div>
+
+            <div id="lightboxCounter" class="lightbox-counter">1 / 1</div>
         </div>
 
+        <button id="backToTopBtn" aria-label="Back to top">↑</button>
     </main>
 
     <footer>
