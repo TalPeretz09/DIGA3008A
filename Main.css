@@ -410,6 +410,11 @@ footer
     margin-top: 1rem;
     width: auto;
   }
+
+  .floating-menu{
+    max-height: 60vh;
+    overflow-y: auto;
+  }
 }
 
 /* Tablet Styles (601px to 1024px) */
