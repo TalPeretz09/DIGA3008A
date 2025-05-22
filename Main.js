@@ -5,9 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const backToTopBtn = document.getElementById('backToTopBtn');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 200) 
+    {
       backToTopBtn.style.display = 'block';
-    } else {
+    } 
+    else 
+    {
       backToTopBtn.style.display = 'none';
     }
   });
@@ -25,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.forEach(link => {
     const hrefPath = new URL(link.getAttribute("href"), window.location.origin).pathname;
 
-    if (currentPath === hrefPath || currentPath.startsWith(hrefPath.replace(/index\.html$/, ''))) {
+    if (currentPath === hrefPath || currentPath.startsWith(hrefPath.replace(/index\.html$/, ''))) 
+    {
       link.classList.add("active");
     }
   });
@@ -41,12 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function handleScroll() {
     const currentScrollY = window.scrollY;
 
-    if (Math.abs(currentScrollY - lastScrollY) > scrollThreshold) {
-      if (currentScrollY > lastScrollY) {
-        // Scrolling down
+    if (Math.abs(currentScrollY - lastScrollY) > scrollThreshold) 
+    {
+      if (currentScrollY > lastScrollY) 
+      {
         navbar.classList.add('hidden');
-      } else {
-        // Scrolling up
+      } 
+      else 
+      {
         navbar.classList.remove('hidden');
       }
       lastScrollY = currentScrollY;
@@ -56,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', () => {
-    if (!ticking) {
+    if (!ticking) 
+    {
       window.requestAnimationFrame(handleScroll);
       ticking = true;
     }
@@ -68,7 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const toggleButton = document.getElementById("floatingHamburger");
 const floatingMenu = document.getElementById("floatingMenu");
 
-if (toggleButton && floatingMenu) {
+if (toggleButton && floatingMenu) 
+{
   // Toggle menu visibility
   toggleButton.addEventListener("click", () => {
     floatingMenu.classList.toggle("hidden");
@@ -87,7 +95,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
+    if (target) 
+    {
       target.scrollIntoView({ behavior: "smooth" });
     }
   });
