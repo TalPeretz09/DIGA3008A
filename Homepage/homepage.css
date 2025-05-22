@@ -14,6 +14,23 @@ h1, h2
     margin-bottom: 1rem;
 }
 
+h1::after,
+h2::after {
+  content: "|";
+  animation: blink 2s infinite;
+  color: #FF77FF;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+
 .u-photo 
 {
     width: 80%;

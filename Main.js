@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ============================
-  // Back to Top Button Functionality
-  // ============================
+  //--------------------------------
+  //Back to Top Button Functionality
+  //--------------------------------
   const backToTopBtn = document.getElementById('backToTopBtn');
 
   window.addEventListener('scroll', () => {
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // ============================
-  // Navbar Active Link Highlighting
-  // ============================
+  //-------------------------------
+  //Navbar Active Link Highlighting
+  //-------------------------------
   const currentPath = window.location.pathname;
   const navLinks = document.querySelectorAll(".navbar a");
 
@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ============================
-  // Smooth Hide Navbar on Scroll Down, Show on Scroll Up
-  // ============================
+  //----------------------------------------------------
+  //Smooth Hide Navbar on Scroll Down, Show on Scroll Up
+  //----------------------------------------------------
   let lastScrollY = window.scrollY;
   let ticking = false;
   const navbar = document.querySelector('.top-header');
@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-// ============================
-// Hamburger Menu Functionality
-// ============================
+//-----------------------------
+//Hamburger Menu Functionality
+//-----------------------------
 const toggleButton = document.getElementById("floatingHamburger");
 const floatingMenu = document.getElementById("floatingMenu");
 
@@ -91,6 +91,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       target.scrollIntoView({ behavior: "smooth" });
     }
   });
+});
+
+//-------------------
+//Cursor Trail Effect
+//-------------------
+document.addEventListener('mousemove', function(e) {
+  const trail = document.createElement('div');
+  trail.className = 'cursor-trail';
+  trail.style.left = `${e.pageX}px`;
+  trail.style.top = `${e.pageY}px`;
+  document.body.appendChild(trail);
+
+  setTimeout(() => {
+    trail.remove();
+  }, 500);
 });
 
 

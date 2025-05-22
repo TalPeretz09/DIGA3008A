@@ -147,7 +147,8 @@ a:hover
     transform: scale(1.05);
 }
 
-.dwnButton /*Download Buttons (PDF,PSD,etc.)*/
+/*Download Buttons (PDF,PSD,etc.)*/
+.dwnButton
 {
     font-family: 'Press Start 2P', cursive;
     background-color: #d3d3d3;
@@ -304,7 +305,7 @@ footer
   text-shadow: 0 0 4px #FF77FF;
 }
 
-/* Floating hamburger button */
+/*Floating hamburger button*/
 .floating-hamburger {
   position: fixed;
   bottom: 1.5rem;
@@ -321,7 +322,7 @@ footer
   cursor: pointer;
 }
 
-/* Floating menu box */
+/*Floating menu box*/
 .floating-menu {
   position: fixed;
   bottom: 6rem;
@@ -340,7 +341,7 @@ footer
   overflow-y: auto;
 }
 
-/* Menu links */
+/*Menu links*/
 .floating-menu a {
   color: #A3D9FF;
   font-family: 'Lora', serif;
@@ -352,17 +353,41 @@ footer
   color: #FF7F50;
 }
 
-/* Hidden by default */
+/*Hidden by default*/
 .floating-menu.hidden {
   display: none;
 }
 
+.cursor-trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #FF77FF 0%, #00FFFF 80%);
+  pointer-events: none;
+  opacity: 0.8;
+  animation: fadeTrail 0.5s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeTrail {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
   
 
-/* Mobile Styles (up to 600px) */
+/*Mobile Query <=600px*/
 @media screen and (max-width: 600px) {
     body {
-        padding-top: 350px; /* Reduce space at the top for mobile */
+        padding-top: 350px; /*Reduce space at the top for mobile*/
     }
 
     .top-header {
@@ -419,10 +444,10 @@ footer
   }
 }
 
-/* Tablet Styles (601px to 1024px) */
+/*Tablet Query 601px-1024px*/
 @media screen and (max-width: 1024px) and (min-width: 601px) {
     body {
-        padding-top: 80px; /* Adjust padding for tablets */
+        padding-top: 80px; /*Space at the top for tablets*/
     }
 
     .top-header {
