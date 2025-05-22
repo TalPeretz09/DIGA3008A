@@ -336,6 +336,8 @@ footer
   z-index: 1000;
   box-shadow: 0 0 10px #FF77FF;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 
 /* Menu links */

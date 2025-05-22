@@ -38,6 +38,30 @@ figcaption
     margin-top: 1rem;
 }
 
+.p-languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.p-languages figure {
+  margin: 0;
+  padding: 0;
+}
+
+.p-languages img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.p-languages img:hover {
+  transform: scale(1.1); /* slight zoom on hover */
+}
+
 hr 
 {
     width: 80%;
