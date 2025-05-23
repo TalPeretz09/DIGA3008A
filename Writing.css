@@ -104,7 +104,7 @@ section.h-entry a:hover
     color: #00a4a4;
 }
 
-/*Previous and Next Buttons*/
+/*Previous and Next Buttons Container*/
 .PN-nav { 
   display: flex;
   justify-content: space-between;
@@ -112,6 +112,7 @@ section.h-entry a:hover
   gap: 7rem;
 }
 
+/*Previous and Next Buttons Specific*/
 .nav-button
 {
     font-family: 'Press Start 2P', cursive;

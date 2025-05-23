@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tal Peretz" />
+    <meta name="description" content="Explore my website ideas, design concepts, 
+    and creative projects. See how I plan and refine my web development work.">
+    <link rel="stylesheet" href="../../Main.css">
+    <link rel="stylesheet" href="../../Writing.css">
+    <script src="../../Main.js"></script>
+    <script src="../../Lightbox.js"></script>
+    <script src="../designs.js"></script>
+    <title>Design 3</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="top-header">
+            <a href="../../index.html"><img src="../../NavBar.png" alt="Website Main Logo"></a>
+            
+            <nav class="navbar">
+                <ul>
+                <li><a href="../../Portfolio/index.html">Portfolio</a></li>
+                <li><a href="../index.html">Designs</a></li>
+                <li><a href="../../Blogs/index.html">Blogs</a></li>
+                <li><a href="../../Essays/index.html">Essays</a></li>
+                <li><a href="../../Contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Site v3.0 Designs</h1> 
+         
+    </header>
+
+    <main>
+        <button class="floating-hamburger" id="floatingHamburger" aria-label="Toggle menu">
+        ☰
+        </button>
+
+        <div class="floating-menu hidden" id="floatingMenu">
+            
+        </div>
+
+        <section class="h-entry e-content">
+            <p>Coming soon...</p>
+        </section>
+
+        <div class="PN-nav">
+            <a id="prevBtn" class="nav-button">Previous</a>
+            <a id="nextBtn" class="nav-button">Next</a>
+        </div>
+
+        
+        <div id="lightboxOverlay" class="lightbox-overlay hidden" role="dialog" aria-modal="true">
+            <button id="lightboxClose" class="lightbox-close" aria-label="Close lightbox">&times;</button>
+            <img id="lightboxImage" class="lightbox-image" src="" alt="Enlarged view">
+            
+            <div class="lightbox-nav">
+                <button id="lightboxPrev" class="lightbox-arrow" aria-label="Previous image">&#10094;</button>
+                <button id="lightboxNext" class="lightbox-arrow" aria-label="Next image">&#10095;</button>
+            </div>
+
+            <div id="lightboxCounter" class="lightbox-counter">1 / 1</div>
+        </div>
+
+        <button id="backToTopBtn" aria-label="Back to top">↑</button>
+    </main>
+
+    <footer>
+        &#169 2025. All Rights Reserved. Tal Peretz
+    </footer>
+</body>
+</html>
