@@ -148,7 +148,7 @@ a:hover
 }
 
 /*Download Buttons (PDF,PSD,etc.)*/
-.dwnButton
+.downBtn
 {
     font-family: 'Press Start 2P', cursive;
     background-color: #d3d3d3;
@@ -468,7 +468,7 @@ footer
         padding: 0.7rem 1.2rem;
     }
 
-    .dwnButton {
+    .downBtn {
         font-size: 1.1rem;
         padding: 0.4rem 0.6rem;
     }
