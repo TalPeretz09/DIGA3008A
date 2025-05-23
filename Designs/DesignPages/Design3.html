@@ -143,8 +143,8 @@
             </figure>
             <p>
                 The navbar is the main way users get around my site. It's fixed at the top of the screen and includes links to the five main sections: Portfolio, Designs, Blogs, Essays, and Contact. I've put Portfolio first because it's the heart of the site - it's where potential employers can get a solid look at my skills, background, and the kinds of projects I've worked on.
-                To keep things usable and accessible, I made sure all the links are clear, readable, and keyboard-navigable. I also added JavaScript that dynamically applies aria-current="page" to whichever section is active. This helps screen readers announce which part of the site the user is in - a small thing that makes a big difference for accessibility.
-                On top of that, I implemented some scroll behaviour with JavaScript: when a user starts scrolling down, the navbar hides itself to free up screen space. This was especially important for mobile users - on smaller screens, the navbar was taking up way too much real estate and making it hard to actually see page content. By hiding it while scrolling and showing it again when scrolling up, users can stay focused on what they're reading or exploring without needing to manually dismiss anything.
+                To keep things usable and accessible, I made sure all the links are clear, readable, and keyboard-navigable. I also want to add JavaScript that dynamically applies aria-current="page" to whichever section is active. This helps screen readers announce which part of the site the user is in - a small thing that makes a big difference for accessibility.
+                On top of that, I implemented some scroll behaviour with JavaScript: when a user starts scrolling down, the navbar hides itself to free up screen space. This was especially important for mobile users - on smaller screens, the navbar was taking up way too much space and making it hard to actually see page content. By hiding it while scrolling and showing it again when scrolling up, users can stay focused on what they're reading or exploring without needing to manually dismiss anything.
                 The navbar's visual style also matches the vaporwave theme of the rest of the site, with good contrast ratios and hover effects that help both with aesthetics and interactivity.
             </p>
             <h3>Lightbox Gallery</h3>
@@ -153,8 +153,8 @@
                 <figcaption>Lightbox Gallery on Design v1.0</figcaption>
             </figure>
             <p>
-                For viewing images (especially in the Games and Fight Stick Designs sections), I implemented a lightbox gallery. When users click on an image, it expands and the background dims, focusing attention on the media.
-                It also disables scrolling in the background, which reduces visual clutter and prevents users from getting lost in the page layout. I included keyboard navigation and made sure images are labeled with alt text so they're accessible to screen readers. It's a feature that not only looks clean but also improves accessibility and content focus.
+                For viewing images (especially in the Games and Fight Stick Designs sections), I implemented a lightbox gallery. When users click on an image, it expands and the background dims, focusing attention on the image.
+                It also disables scrolling in the background, which reduces visual clutter and prevents users from getting lost in the page layout. I included keyboard navigation and made sure images are labeled with alt text so they're accessible to screen readers. It's a feature that not only looks orderly and structured but also improves accessibility and content focus.
             </p>
             <h3>Download Buttons</h3>
             <figure>
@@ -166,8 +166,8 @@
                 <figcaption>Fight Stick PDF & PSD Download Buttons</figcaption>
             </figure>
             <p>
-                On the Credentials and Fight Stick Designs pages, I included clearly labeled buttons that let users download PDFs. These are styled to stand out and use accessible color contrast and hover effects.
-                I added these because not all users want to browse online - some might prefer or need to save content locally for offline viewing. The buttons also help employers or collaborators quickly access and save my work without digging through the page.
+                On the Credentials and Fight Stick Designs pages, I included clearly labeled buttons that let users download PDF and/or PSD's. These are styled to stand out and use accessible color contrast and hover effects.
+                I added these because not all users want to browse online - some might prefer or need to save content locally for offline use. The buttons also help employers or collaborators quickly access and save my work without digging through the page.
             </p>
             <h3>Highlighting Active Nav Items</h3>
             <figure>
@@ -175,8 +175,8 @@
                 <figcaption>Navbar Highlighting Portfolio on About Me Page</figcaption>
             </figure>
             <p>
-                To help users keep track of where they are on the site, I added JavaScript that highlights the active nav item - not just based on page, but also on subpage location. For example, if a user is on the "Games" page, the "Portfolio" nav item stays highlighted.
-                This visual feedback helps all users stay oriented, especially those who might be jumping between multiple sections or using screen readers. It's a small cue, but it improves overall navigation confidence and reduces confusion.
+                To help users keep track of where they are on the site, I added JavaScript that highlights the active nav item - not just based on page, but also on subpage location. For example, if a user is on the "About Me" page, the "Portfolio" nav button stays highlighted.
+                This visual feedback helps all users stay oriented, especially those who might be jumping between multiple sections or using screen readers. It's a small cue, but it improves overall navigation and reduces confusion.
             </p>
             <h3>Pagination - Next & Previous Buttons</h3>
             <figure>
@@ -184,8 +184,8 @@
                 <figcaption>Previous & Next Buttons</figcaption>
             </figure>
             <p>
-                On the individual Blog and Essay pages, I added “Next” and “Previous” buttons at the bottom to allow for linear navigation between posts.
-                This supports users who prefer to read content in sequence rather than jumping back to the card selector every time. It's particularly useful for keyboard users or those with cognitive impairments who benefit from simple, consistent navigation paths. The buttons are also large, clearly labelled, and include appropriate aria-labels for screen readers.
+                On the individual Blogs, Essays and Designs pages, I added “Next” and “Previous” buttons at the bottom to allow for linear navigation between posts.
+                This supports users who prefer to read content in sequence rather than jumping back to the card selector every time. It's particularly useful for those with cognitive impairments who benefit from simple, consistent navigation paths. The buttons are also large, clearly labelled, and include appropriate aria-labels for screen readers.
             </p>
             <h3>Custom Cursor</h3>
             <figure>
@@ -194,7 +194,7 @@
             </figure>
             <p>
                 I replaced the default browser cursors with custom .cur files to give the site a more personalised and vaporwave-inspired feel. The neutral cursor is used for general navigation, while the pointer cursor appears over clickable elements like buttons and links. This subtle tweak adds to the retro aesthetic and helps reinforce which elements are interactive in a more stylised way.
-                To further emphasise the visual theme, I implemented a custom trail animation that follows the cursor around the screen. The trail uses pastel and neon tones consistent with the rest of the palette. It adds motion and energy to the user experience without being too distracting, and makes the site feel more dynamic and alive.
+                To further emphasise the visual theme, I implemented a custom trail animation that follows the cursor around the screen. The trail uses neon colouring consistent with the rest of the palette. It adds motion and energy to the user experience without being too distracting, and makes the site feel more dynamic and interactable.
             </p>
             <h3>Typing Animation on homepage</h3>
             <figure>
