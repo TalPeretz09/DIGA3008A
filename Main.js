@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 //Back to Top Button
 //------------------
-const backToTopBtn = document.getElementById('backToTopBtn'); //Get button element
+const BttBtn = document.getElementById('backToTopBtn'); //Get button element
 
 function toggleBTT() 
 {
   if (window.scrollY > 180) //If user scrolls passed 180px
   {
-    backToTopBtn.style.display = 'block'; //Display button
+    BttBtn.style.display = 'block'; //Display button
   } 
   else 
   {
-    backToTopBtn.style.display = 'none'; //Hide button
+    BttBtn.style.display = 'none'; //Hide button
   }
 }
 
@@ -21,7 +21,7 @@ function scrollToTop() //Call function
 }
 
 window.addEventListener('scroll', toggleBTT);
-backToTopBtn.addEventListener('click', scrollToTop);
+BttBtn.addEventListener('click', scrollToTop);
 
 
 
@@ -70,28 +70,28 @@ window.addEventListener('scroll', toggleNavbarOnScroll);
  
 //Hamburger Menu Functionality
 //-----------------------------
-const toggleButton = document.getElementById("floatingHamburger"); // Button to toggle menu
-const floatingMenu = document.getElementById("floatingMenu"); // The actual floating menu
+const hamburger = document.getElementById("floatingHamburger"); // Button to toggle menu
+const burgerMenu = document.getElementById("floatingMenu"); // The actual floating menu
 
-if (toggleButton && floatingMenu) //Check that the hamburger and menu exist on the particular webpage
+if (hamburger && burgerMenu) //Check that the hamburger and menu exist on the particular webpage
 {
   //Toggle menu visibility
   function toggleMenu() 
   {
-    floatingMenu.classList.toggle("hidden");
+    burgerMenu.classList.toggle("hidden");
   }
 
   //Hide menu after link click
   function hideMenu() 
   {
-    floatingMenu.classList.add("hidden");
+    burgerMenu.classList.add("hidden");
   }
 
   //Add click listener to toggle button
-  toggleButton.addEventListener("click", toggleMenu);
+  hamburger.addEventListener("click", toggleMenu);
 
   //Add click listeners to each link inside the menu
-  const links = floatingMenu.querySelectorAll("a");
+  const links = burgerMenu.querySelectorAll("a");
   for (let i = 0; i < links.length; i++) 
   {
     links[i].addEventListener("click", hideMenu);
