@@ -11,18 +11,24 @@ document.addEventListener("DOMContentLoaded", () => {
   let i = 0;
   let j = 0;
 
-  function typeH1() {
-    if (i < h1Text.length) {
-      h1.textContent += h1Text.charAt(i);
+  function typeH1() 
+  {
+    if (i < h1Text.length) 
+    {
+      h1.textContent += h1Text.charAt(i); //Add characters (starts typing)
       i++;
       setTimeout(typeH1, 100);
-    } else {
-      setTimeout(typeH2, 500); // wait before starting h2
+    } 
+    else 
+    {
+      setTimeout(typeH2, 500); // wait 500ms before starting h2
     }
   }
 
-  function typeH2() {
-    if (j < h2Text.length) {
+  function typeH2() 
+  {
+    if (j < h2Text.length) 
+    {
       h2.textContent += h2Text.charAt(j);
       j++;
       setTimeout(typeH2, 100);

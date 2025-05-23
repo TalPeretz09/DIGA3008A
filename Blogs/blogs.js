@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (match) 
   {
-    const blogNum = parseInt(match[1]); //Extract blog number from filename
+    const blogNum = parseInt(match[1]); //Extract essay number from the filename by converting the string to an integer
     const prevNum = blogNum - 1; //Calculate previous blog number
     const nextNum = blogNum + 1; //Calculate next blog number
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (nextBtn && nextNum <= 10) 
-    { //Adjust this if you add more blog pages
+    { //Increase Upper Limit if adding more writing
       nextBtn.href = `Blog${nextNum}.html`; //Set href if next blog exists
     } 
     else if (nextBtn) 

@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (match) 
   {
-    const essayNum = parseInt(match[1]); //Extract design number from the filename
-    const prevNum = essayNum - 1; //Calculate previous design number
-    const nextNum = essayNum + 1; //Calculate next design number
+    const designNum = parseInt(match[1]); //Extract design number from the filename by converting the string to an integer
+    const prevNum = designNum - 1; //Calculate previous design number
+    const nextNum = designNum + 1; //Calculate next design number
 
     const prevBtn = document.getElementById("prevBtn"); //Get previous button element
     const nextBtn = document.getElementById("nextBtn"); //Get next button element
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (nextBtn && nextNum <= 4) 
-    { //Adjust this upper limit if more designs are added
+    { //Increase Upper Limit if adding more writing
       nextBtn.href = `Design${nextNum}.html`; //Set href of next button if valid
     } 
     else if (nextBtn) 

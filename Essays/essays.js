@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (match) 
   {
-    const essayNum = parseInt(match[1]); //Extract essay number from the filename
+    const essayNum = parseInt(match[1]); //Extract essay number from the filename by converting the string to an integer
     const prevNum = essayNum - 1; //Calculate previous essay number
     const nextNum = essayNum + 1; //Calculate next essay number
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (nextBtn && nextNum <= 2) 
-    { //Adjust this upper limit if more essays are added
+    { //Increase Upper Limit if adding more writing
       nextBtn.href = `Essay${nextNum}.html`; //Set href of next button if valid
     } 
     else if (nextBtn) 
