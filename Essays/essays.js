@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.style.display = "none"; //Hide previous button if no valid previous page
     }
 
-    if (nextBtn && nextNum <= 2) 
+    if (nextBtn && nextNum <= 3) 
     { //Increase Upper Limit if adding more writing
       nextBtn.href = `Essay${nextNum}.html`; //Set href of next button if valid
     } 
