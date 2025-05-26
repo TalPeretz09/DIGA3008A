@@ -1,96 +1,123 @@
-💻 Portfolio Website - Tal Peretz
-This is the repository for my personal portfolio website. It is built using HTML, CSS, and JavaScript. The purpose of the site is to showcase my portfolio work as a Game Design and Electrical Engineering student at the University of the Witwatersrand. It features my game projects, essays, blog posts, fight stick designs, and web designs.
+# 💻 Portfolio Website – Tal Peretz
 
-📁 Folder Structure Decisions
-This project intentionally uses a flat and minimalist folder structure to reflect the current scope of the site. As the site grows, I plan to expand the structure accordingly—but for now, these decisions help keep things lean and easy to manage.
+This is the repository for my personal **portfolio website**, built using **HTML, CSS, and JavaScript**.  
+It showcases my work as a **Game Design and Electrical Engineering student** at the **University of the Witwatersrand**.
 
-1. ❌ Removed /styles and /scripts folders
-Although it's a common convention to store all CSS and JS files in dedicated styles/ and scripts/ folders, I chose to omit these folders for now. Here’s why:
+The website includes:
 
-Each page only has one unique CSS and JS file, in addition to shared/global files.
+- 🎮 Game Projects  
+- 📝 Essays  
+- 📰 Blog Posts  
+- 🎨 Fight Stick Designs  
+- 🌐 Web Design Work
 
-Keeping them in separate folders would add unnecessary depth to the project tree.
+---
 
-This keeps things lightweight and easier to navigate while the site is small.
+## 📁 Folder Structure Decisions
 
-If the project grows significantly, I’ll consider reimplementing dedicated folders.
+This project uses a minimalist and flat folder structure that reflects the current scale of the site. As it grows, I plan to refactor the structure. Here's a breakdown of the current decisions:
 
-2. 🏠 Dedicated /Homepage/ Folder
-The homepage-specific assets (CSS, JS, images, and audio) are stored in their own folder:
+### ❌ 1. No `/styles` or `/scripts` Folders (Yet)
 
-This includes: homepage.css, HomepageChills.mp3, and all homepage-specific images and scripts.
+Although it's conventional to separate all CSS and JavaScript files into `/styles/` and `/scripts/` folders, I’ve deliberately chosen not to, because:
 
-The actual homepage HTML (index.html) remains in the root directory.
+- Each webpage has at most one unique CSS and JavaScript file.
+- Global/shared files already exist in the root.
+- Additional folders would only increase the depth of the file tree without meaningful benefit at this scale.
 
-I chose this structure to:
+> When the project grows, I may introduce those folders for better organization.
 
-Reduce clutter in the root folder
+---
 
-Quickly locate all homepage-specific files
+### 🏠 2. Dedicated `/Homepage/` Folder
 
-Maintain a clear separation between global resources and page-specific ones
+The homepage-specific assets (e.g. CSS, JS, images, and audio) are stored in a dedicated `Homepage/` folder. This includes:
 
-While convention says to place homepage assets in the root, this method improves personal workflow and maintainability for me.
+- `homepage.css`  
+- `HomepageChills.mp3`  
+- All homepage-specific images and scripts
 
-3. 🌐 Global & Multi-use Files in Root Directory
-Files used by multiple pages are stored directly in the root folder and use capitalised filenames to help them stand out. Examples:
+**Note:** The homepage HTML itself (`index.html`) remains in the **root directory**.
 
-Main.css – Global stylesheet used across pages
+**Why this structure?**
 
-Main.js – Global JS for UI elements (e.g. navbar, back-to-top button)
+- Keeps the root directory clean  
+- Makes it easier to locate homepage-specific assets  
+- Clearly separates global vs page-specific resources
 
-Lightbox.js – Shared gallery script used by multiple pages
+---
 
-Selector.css – Style overrides or special selectors used across pages
+### 🌐 3. Global & Multi-use Files in Root Directory
 
-This structure ensures:
+Files that are used across multiple pages are kept directly in the root folder with capitalized filenames for visibility and consistency.
 
-Easy access to global resources
+Examples:
 
-Cleaner code reuse
+- `Main.css` – Global styles across all pages  
+- `Main.js` – Global JavaScript for UI elements (navbar, back-to-top button)  
+- `Lightbox.js` – Shared script for the image gallery  
+- `Selector.css` – General purpose CSS for shared layout logic
 
-No confusion with page-specific styles/scripts
+**Benefits:**
 
-4. 📄 Subpages Named with Capital Letters
-Subpages such as Blogs, Essays, and Designs each have their own folders and follow this naming convention:
+- Centralized and consistent access to shared files  
+- Avoids duplication and improves reusability  
+- Cleaner and easier to maintain
 
-Folder and individual web page file names start with capital letters for consistency with global files.
+---
 
-These subpages have minimal or no interdependence with other files, so this structure doesn’t cause confusion.
+### 📄 4. Subpages Use Capitalized Folder Names
 
-Each navigation folder contains its own index.html (selector webpage) and any page-specific assets.
+Subsections like `Blogs/`, `Essays/`, and `Designs/` follow a capitalized folder naming convention to align with global file naming. Each contains:
 
-📌 Future Plans
-As the site grows, I may introduce /styles and /scripts folders to reduce clutter.
+- Their own `index.html`  
+- Local assets (images, page-specific styles/scripts)
 
-Possible future features: dark mode, responsive design improvements, and modular components.
+**Why this works:**
 
-Semantic HTML and ARIA attributes will continue to be improved for accessibility.
+- These pages don’t interact much with other folders  
+- Capitalization keeps naming consistent with global assets  
+- Keeps navigation and substructure organized
 
-🧰 Tools & Tech
-HTML5 / CSS3 / JavaScript
+---
 
-Font libraries: Google Fonts
+## 📌 Future Plans
 
-Hosting: Github Pages Deployment
+As the website evolves, I intend to:
 
-No frameworks
+- 🌓 Add a dark mode  
+- 📱 Improve responsive layout  
+- ♻️ Modularize shared components  
+- 🧠 Continue improving accessibility and semantic HTML
 
-🎨 Aesthetic
-The site uses a vaporwave-inspired visual style, with:
+---
 
-Neon pinks, aqua blues, and pastel gradients
+## 🧰 Tools & Tech
 
-Retro fonts and icons
+- 🧾 HTML5 / CSS3 / JavaScript  
+- 🔤 Fonts: Google Fonts  
+- 🚀 Hosting: GitHub Pages  
+- ❎ No frameworks – pure front-end
 
-Minimalistic UI elements and hover animations
+---
 
-This reflects my creative side while also showcasing technical skills.
+## 🎨 Aesthetic
 
-✅ Accessibility & Best Practices
-Images include meaningful alt attributes (or alt="" when decorative)
+The visual style is **vaporwave-inspired**, featuring:
 
-Navigation uses semantic HTML elements and aria-labels where appropriate
+- 🌈 Neon pinks, aqua blues, pastel gradients  
+- 🔠 Retro-styled fonts (Orbitron, VT323, Press Start 2P)  
+- ✨ Hover animations and minimalist UI elements
 
-Lightbox and navigation are keyboard-navigable
+This reflects both my creative aesthetic and technical ability.
 
+---
+
+## ✅ Accessibility & Best Practices
+
+- 🖼️ All images include `alt` attributes (or `alt=""` when decorative)  
+- 🧱 Semantic HTML is used throughout (`<nav>`, `<main>`, `<section>`, etc.)  
+- ♿ ARIA labels improve screen reader accessibility  
+- ⌨️ Lightbox and navigation are keyboard-navigable
+
+---
