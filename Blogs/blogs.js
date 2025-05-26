@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevBtn.style.display = "none"; //Hide button if no previous blog
     }
 
-    if (nextBtn && nextNum <= 10) 
+    if (nextBtn && nextNum <= 11) 
     { //Increase Upper Limit if adding more writing
       nextBtn.href = `Blog${nextNum}.html`; //Set href if next blog exists
     } 
