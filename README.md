@@ -15,17 +15,17 @@ The website includes:
 
 ## 📁 Folder Structure Decisions
 
-This project uses a minimalist and flat folder structure that reflects the current scale of the site. As it grows, I plan to refactor the structure. Here's a breakdown of the current decisions:
+This project uses a minimalist folder structure that reflects the current scale of the site. As it grows, I plan to reassess the structure. Here's a breakdown of the current decisions:
 
 ### ❌ 1. No `/styles` or `/scripts` Folders (Yet)
 
-Although it's conventional to separate all CSS and JavaScript files into `/styles/` and `/scripts/` folders, I’ve deliberately chosen not to, because:
+Although it's conventional to separate all CSS and JavaScript files into `/styles/` and `/scripts/` folders, I’ve purposefully chosen not to, because:
 
 - Each webpage has at most one unique CSS and JavaScript file.
 - Global/shared files already exist in the root.
-- Additional folders would only increase the depth of the file tree without meaningful benefit at this scale.
+- Extra folders would only increase the depth of the filing structure without any meaningful benefit at this scale.
 
-> When the project grows, I may introduce those folders for better organization.
+> When the project grows, I may introduce those folders for better organisation.
 
 ---
 
@@ -49,7 +49,7 @@ The homepage-specific assets (e.g. CSS, JS, images, and audio) are stored in a d
 
 ### 🌐 3. Global & Multi-use Files in Root Directory
 
-Files that are used across multiple pages are kept directly in the root folder with capitalized filenames for visibility and consistency.
+Files that are used across multiple pages are kept directly in the root folder with capitalised filenames for visibility and consistency.
 
 Examples:
 
@@ -60,7 +60,7 @@ Examples:
 
 **Benefits:**
 
-- Centralized and consistent access to shared files  
+- Centralised and consistent access to shared files  
 - Avoids duplication and improves reusability  
 - Cleaner and easier to maintain
 
@@ -68,7 +68,7 @@ Examples:
 
 ### 📄 4. Subpages Use Capitalized Folder Names
 
-Subsections like `Blogs/`, `Essays/`, and `Designs/` follow a capitalized folder naming convention to align with global file naming. Each contains:
+Subsections like `BlogPages/`, `EssayPages/`, and `DesignPages/` follow a capitalised folder naming convention to align with global file naming. Each contains:
 
 - Their own `index.html`  
 - Local assets (images, page-specific styles/scripts)
@@ -76,19 +76,8 @@ Subsections like `Blogs/`, `Essays/`, and `Designs/` follow a capitalized folder
 **Why this works:**
 
 - These pages don’t interact much with other folders  
-- Capitalization keeps naming consistent with global assets  
+- Capitalisation keeps naming consistent with global assets  
 - Keeps navigation and substructure organized
-
----
-
-## 📌 Future Plans
-
-As the website evolves, I intend to:
-
-- 🌓 Add a dark mode  
-- 📱 Improve responsive layout  
-- ♻️ Modularize shared components  
-- 🧠 Continue improving accessibility and semantic HTML
 
 ---
 
@@ -97,7 +86,7 @@ As the website evolves, I intend to:
 - 🧾 HTML5 / CSS3 / JavaScript  
 - 🔤 Fonts: Google Fonts  
 - 🚀 Hosting: GitHub Pages  
-- ❎ No frameworks – pure front-end
+- ❎ No frameworks
 
 ---
 
