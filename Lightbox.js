@@ -12,31 +12,36 @@ document.addEventListener('DOMContentLoaded', function() { //Wait for full DOM t
 
   let tl_currentIdx = 0; //Track which image is currently shown in the lightbox
 
-  function tl_updateLightbox(idx) {
+  function tl_updateLightbox(idx) 
+  {
     let img = tl_galleryImgs[idx]; //Get the image based on the current index
     tl_lightboxImg.src = img.src; //Set lightbox image source to selected image source
     tl_lightboxImg.alt = img.alt || 'Enlarged view'; //Set alt text or fallback
     tl_counter.textContent = (idx + 1) + " / " + tl_galleryImgs.length; //Update image counter display
   }
 
-  function tl_openLightbox(idx) {
+  function tl_openLightbox(idx) 
+  {
     tl_currentIdx = idx; //Set current image index
     tl_updateLightbox(tl_currentIdx); //Load and display the image
     tl_overlay.classList.remove('hidden'); //Show the overlay
     document.body.style.overflow = 'hidden'; //Disable background scroll
   }
 
-  function tl_closeLightbox() {
+  function tl_closeLightbox() 
+  {
     tl_overlay.classList.add('hidden'); //Hide the overlay
     document.body.style.overflow = ''; //Re-enable page scrolling
   }
 
-  function tl_showNext() {
+  function tl_showNext() 
+  {
     tl_currentIdx = (tl_currentIdx + 1) % tl_galleryImgs.length; //Go to next image, loop around
     tl_updateLightbox(tl_currentIdx); //Update the image display
   }
 
-  function tl_showPrev() {
+  function tl_showPrev() 
+  {
     tl_currentIdx = (tl_currentIdx - 1 + tl_galleryImgs.length) % tl_galleryImgs.length; //Go to previous image, loop around
     tl_updateLightbox(tl_currentIdx); //Update the image display
   }
@@ -60,11 +65,13 @@ document.addEventListener('DOMContentLoaded', function() { //Wait for full DOM t
 
   // Keyboard controls
   document.addEventListener('keydown', function(e) {
-    if (tl_overlay.classList.contains('hidden')) { //Ignore if lightbox isn't open
+    if (tl_overlay.classList.contains('hidden')) 
+    { //Ignore if lightbox isn't open
       return;
     }
 
-    switch (e.key) {
+    switch (e.key) 
+    {
       case 'Escape': //Close lightbox with ESC
         tl_closeLightbox();
         break;
