@@ -67,13 +67,18 @@ async function loadAnimeQuote()
 
 loadAnimeQuote();
 
-//Vaporwave Gif API Logic (Giphy)
+//GIF and Sticker API logic (Giphy)
 //-------------------------------
 const gifEl = document.getElementById("vaporwave-gif");
+const stickerEl = document.getElementById("sticker");
 
-async function loadVaporwaveGif() {
-  try {
-    const apiKey = "C7imfdvqIh9UNE7gc2JfaXk563qYuPDm"; // Replace with your actual API key
+const apiKey = "C7imfdvqIh9UNE7gc2JfaXk563qYuPDm"; //API Key from GIPHY Developers
+
+// Load vaporwave GIF
+async function loadGif() 
+{
+  try 
+  {
     const response = await fetch(
       `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=vaporwave&rating=PG-13`
     );
@@ -82,16 +87,40 @@ async function loadVaporwaveGif() {
 
     const data = await response.json();
     const gifUrl = data.data.images.original.url;
-
     gifEl.src = gifUrl;
-  } catch (error) {
+  } 
+  catch (error) 
+  {
     console.error("Failed to fetch GIF:", error);
     gifEl.alt = "Could not load GIF. Please try again.";
   }
 }
 
-// Load a GIF when the page loads
-loadVaporwaveGif();
+// Load sticker
+async function loadSticker() 
+{
+  try 
+  {
+    const response = await fetch(
+      `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=see you tomorrow&limit=1&rating=PG-13`
+    );
+
+    if (!response.ok) throw new Error("Network response was not ok");
+
+    const data = await response.json();
+    const stickerUrl = data.data[0].images.original.url;
+    stickerEl.src = stickerUrl;
+  } 
+  catch (error) 
+  {
+    console.error("Failed to fetch sticker:", error);
+    stickerEl.alt = "Could not load sticker. Please try again.";
+  }
+}
+  loadGif();
+  loadSticker();
+
+
 
 
 
