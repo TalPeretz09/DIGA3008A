@@ -101,7 +101,7 @@ async function loadSticker() {
   try {
     const limit = 15; // Fetch more stickers
     const response = await fetch(
-      `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=see you tomorrow&limit=${limit}&rating=PG-13`
+      `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=vaporwave&limit=${limit}&rating=PG-13`
     );
 
     if (!response.ok) throw new Error("Network response was not ok");
