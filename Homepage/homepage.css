@@ -71,5 +71,12 @@ blockquote
     font-size: 1.125rem;
 }
 
+#vaporwave-gif,
+#vaporwave-sticker
+{
+  width: 80%;
+  height: 80%
+}
+
 
   
