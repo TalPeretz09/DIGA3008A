@@ -385,8 +385,18 @@ footer
   }
 }
 
-
-  
+#closeNavBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+}
 
 /*Mobile Query <=600px*/
 @media screen and (max-width: 600px) {
@@ -445,6 +455,10 @@ footer
   .floating-menu{
     max-height: 60vh;
     overflow-y: auto;
+  }
+
+  #closeNavBtn {
+    display: block;
   }
 }
 

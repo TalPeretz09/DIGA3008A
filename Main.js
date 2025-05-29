@@ -46,6 +46,7 @@ for (let i = 0; i < navLinks.length; i++) //Loop through all navbar links
 //---------------------------------------------
 let lastScrollY = window.scrollY; //Store last scroll position
 const navbar = document.querySelector('.top-header'); //Select the navbar
+const closeNavBtn = document.getElementById("closeNavBtn"); //Select the close navbar button
 
 function toggleNavbarOnScroll() 
 {
@@ -64,6 +65,10 @@ function toggleNavbarOnScroll()
     lastScrollY = currentScrollY;
   }
 }
+
+closeNavBtn.addEventListener("click", () => {
+  navbar.classList.toggle("hidden");
+});
 
 window.addEventListener('scroll', toggleNavbarOnScroll);
 
