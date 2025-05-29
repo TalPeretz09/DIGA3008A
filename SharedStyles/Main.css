@@ -498,6 +498,10 @@ footer
   #closeNavBtn {
     display: block;
   }
+
+  .footer-icons {
+    margin-left: 5.5rem;
+  }
 }
 
 /*Tablet Query 601px-1024px*/
