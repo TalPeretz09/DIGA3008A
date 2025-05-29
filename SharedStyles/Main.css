@@ -207,6 +207,7 @@ footer
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin-right: 2rem;
 }
 
 .footer-icons a img {

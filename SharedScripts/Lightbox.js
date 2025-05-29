@@ -2,7 +2,7 @@
 //----------------------
 document.addEventListener('DOMContentLoaded', function() { //Wait for full DOM to load before running script
   let tl_allImgs = Array.from(document.querySelectorAll('img:not(#lightboxImage)')); //Get all <img> tags except the lightbox image
-  let tl_galleryImgs = tl_allImgs.slice(1); //Skip first image (assumed to be navbar logo)
+  let tl_galleryImgs = tl_allImgs.slice(1, -4); //Skip first image (navbar logo) and final 4 images (footer icons)
   let tl_overlay = document.getElementById('lightboxOverlay'); //Lightbox overlay element
   let tl_lightboxImg = document.getElementById('lightboxImage'); //Enlarged image display area
   let tl_closeBtn = document.getElementById('lightboxClose'); //Close button
