@@ -17,7 +17,7 @@ body
     min-height: 100vh;
     scroll-behavior: smooth;
     padding-top: 120px;
-    cursor: url(Cursors/Normal\ Select.cur), auto;
+    cursor: url(../Cursors/Normal\ Select.cur), auto;
 }
 
 h1
@@ -60,7 +60,7 @@ a
     color: #9f009f;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    cursor: url(Cursors/Link\ Select.cur), pointer;
+    cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 a:hover 
@@ -121,7 +121,7 @@ a:hover
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     box-shadow: 1px 1px 0 black;
-    cursor: url(Cursors/Link\ Select.cur), pointer;
+    cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
   
 .navbar a:hover 
@@ -158,7 +158,7 @@ a:hover
     color: black;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    cursor: url(Cursors/Link\ Select.cur), pointer;
+    cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 hr 
@@ -241,7 +241,7 @@ footer
   #backToTopBtn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px #FF77FF;
-    cursor: url(Cursors/Link\ Select.cur), pointer;
+    cursor: url(../Cursors/Link\ Select.cur), pointer;
   }
 
   /*Overlay background*/
@@ -292,7 +292,7 @@ footer
 .lightbox-close:focus {
   transform: scale(1.2);
   outline: none;
-  cursor: url(Cursors/Link\ Select.cur), pointer;
+  cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 /*Navigation buttons container*/
@@ -329,7 +329,7 @@ footer
   background-color: #9B4DFF;
   transform: scale(1.1);
   outline: none;
-  cursor: url(Cursors/Link\ Select.cur), pointer;
+  cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 /*Image counter*/
@@ -358,7 +358,7 @@ footer
   width: 3.5rem;
   height: 3.5rem;
   box-shadow: 0 0 10px #FF77FF, 0 0 20px #00FFFF;
-  cursor: url(Cursors/Link\ Select.cur), pointer;
+  cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 /*Floating menu box*/
@@ -390,7 +390,7 @@ footer
 
 .floating-menu a:hover {
   color: #FF7F50;
-  cursor: url(Cursors/Link\ Select.cur), pointer;
+  cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
 /*Hidden by default*/
