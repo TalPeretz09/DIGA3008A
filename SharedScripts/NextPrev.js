@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
+
   const pageTypes = [
     { prefix: 'Blog', upperLimit: 11 },
     { prefix: 'Design', upperLimit: 4 },
     { prefix: 'Essay', upperLimit: 3 }
   ];
 
-  const currentPath = window.location.pathname;
+  const nextPrev_currentPath = window.location.pathname;
 
   for (let i = 0; i < pageTypes.length; i++) {
     const type = pageTypes[i];
     const prefix = type.prefix;
     const upperLimit = type.upperLimit;
 
-    const index = currentPath.indexOf(prefix);
+    const index = nextPrev_currentPath.indexOf(prefix);
     if (index !== -1) {
-      const fileName = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+      const fileName = nextPrev_currentPath.substring(nextPrev_currentPath.lastIndexOf('/') + 1);
       const numberString = fileName.substring(prefix.length, fileName.lastIndexOf('.html'));
       const pageNum = parseInt(numberString);
 
@@ -43,4 +43,3 @@ document.addEventListener('DOMContentLoaded', function() {
       break;
     }
   }
-});

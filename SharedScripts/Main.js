@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 //Back to Top Button
 //------------------
 const BttBtn = document.getElementById('backToTopBtn'); //Get button element
@@ -136,6 +135,3 @@ function createTrail(e)
 }
 
 document.addEventListener('mousemove', createTrail);
-
-
-});

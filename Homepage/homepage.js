@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
 //Typing Animation Logic
 //----------------------
 const h1 = document.querySelector("h1");
@@ -121,9 +120,3 @@ async function loadSticker() {
 
   loadGif();
   loadSticker();
-
-
-
-
-
-});
