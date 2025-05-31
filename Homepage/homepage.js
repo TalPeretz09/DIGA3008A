@@ -38,7 +38,7 @@ function typeH2()
 
 typeH1();
 
-//Anime Quote API Logic (Animechan)
+//Anime Quote API Logic (Yurippe)
 //---------------
 const quoteEl = document.getElementById("anime-quote");
 
@@ -46,21 +46,21 @@ async function loadAnimeQuote()
 {
   try 
   {
-    const response = await fetch("https://api.animechan.io/v1/quotes/random");
+    const response = await fetch("https://yurippe.vercel.app/api/quotes?random=1");
     if (!response.ok) throw new Error("Network response was not ok");
 
-    const json = await response.json();
-    const data = json.data;
+    const data = await response.json();
+    const quoteData = data[0]; // since the API returns an array
 
-    const quote = data.content;
-    const character = data.character.name;
+    const quote = quoteData.quote || "No quote found";
+    const character = quoteData.character || "Unknown";
 
     quoteEl.textContent = '"' + quote + '" — ' + character;
   } 
   catch (error) 
   {
     console.error("Failed to fetch quote:", error);
-    quoteEl.textContent = "Too many quotes generated. Pls try again later :)";
+    quoteEl.textContent = "Failed to fetch quote";
   }
 }
 
