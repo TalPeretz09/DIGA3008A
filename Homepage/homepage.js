@@ -22,7 +22,7 @@ function typeH1()
   } 
   else 
   {
-    setTimeout(typeH2, 500); // wait 500ms before starting h2
+    setTimeout(typeH2, 500); //wait 500ms before starting h2
   }
 }
 
@@ -40,7 +40,7 @@ typeH1();
 
 //Anime Quote API Logic (Yurippe)
 //---------------
-const quoteEl = document.getElementById("anime-quote");
+const quoteElm = document.getElementById("anime-quote");
 
 async function loadAnimeQuote() 
 {
@@ -50,17 +50,17 @@ async function loadAnimeQuote()
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.json();
-    const quoteData = data[0]; // since the API returns an array
+    const quoteData = data[0]; //API data returning an array
 
     const quote = quoteData.quote || "No quote found";
     const character = quoteData.character || "Unknown";
 
-    quoteEl.textContent = '"' + quote + '" — ' + character;
+    quoteElm.textContent = '"' + quote + '" — ' + character;
   } 
   catch (error) 
   {
     console.error("Failed to fetch quote:", error);
-    quoteEl.textContent = "Failed to fetch quote";
+    quoteElm.textContent = "Failed to fetch quote";
   }
 }
 
@@ -68,12 +68,12 @@ loadAnimeQuote();
 
 //GIF and Sticker API logic (Giphy)
 //-------------------------------
-const gifEl = document.getElementById("vaporwave-gif");
-const stickerEl = document.getElementById("vaporwave-sticker");
+const gif = document.getElementById("vaporwave-gif");
+const sticker= document.getElementById("vaporwave-sticker");
 
 const apiKey = "C7imfdvqIh9UNE7gc2JfaXk563qYuPDm"; //API Key from GIPHY Developers
 
-// Load vaporwave GIF
+//Load vaporwave GIF
 async function loadGif() 
 {
   try 
@@ -86,19 +86,21 @@ async function loadGif()
 
     const data = await response.json();
     const gifUrl = data.data.images.original.url;
-    gifEl.src = gifUrl;
+    gif.src = gifUrl;
   } 
   catch (error) 
   {
     console.error("Failed to fetch GIF:", error);
-    gifEl.alt = "Could not load GIF. Please try again.";
+    gif.alt = "Could not load GIF. Please try again.";
   }
 }
 
-// Load sticker
-async function loadSticker() {
-  try {
-    const limit = 15; // Fetch more stickers
+//Load sticker
+async function loadSticker() 
+{
+  try 
+  {
+    const limit = 15; //Get more stickers
     const response = await fetch(
       `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=vaporwave&limit=${limit}&rating=PG-13`
     );
@@ -111,10 +113,12 @@ async function loadSticker() {
 
     const randomIndex = Math.floor(Math.random() * data.data.length);
     const stickerUrl = data.data[randomIndex].images.original.url;
-    stickerEl.src = stickerUrl;
-  } catch (error) {
+    sticker.src = stickerUrl;
+  } 
+  catch (error) 
+  {
     console.error("Failed to fetch sticker:", error);
-    stickerEl.alt = "Could not load sticker. Please try again.";
+    sticker.alt = "Could not load sticker. Please try again.";
   }
 }
 
