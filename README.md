@@ -22,8 +22,8 @@ This project uses a minimalist folder structure that reflects the current scale 
 Although it's conventional to separate all CSS and JavaScript files into `/styles/` and `/scripts/` folders, I’ve purposefully chosen to only do so for scripts and styles which apply to multiple or all webpages, because:
 
 - Each webpage has at most one unique CSS and JavaScript file.
-- Global/shared files already exist in the shared folders.
-- Extra folders would only increase the depth of the filing structure without any meaningful benefit at this scale.
+- Global/shared files already exist in the root styles, scripts and images folders.
+- Extra folders would only increase the complexity of the filing structure without any meaningful benefit.
 
 > When the project grows, I may introduce those folders for better organisation.
 
@@ -49,7 +49,7 @@ The homepage-specific assets (e.g. CSS, JS, images, and audio) are stored in a d
 
 ### 🌐 3. Global & Multi-use Files in Root Directory
 
-Files that are used across multiple pages are kept directly in the `SharedImages/`, `SharedScripts/` and `SharedStylres/` folders with capitalised filenames for visibility and consistency.
+Files that are used across multiple pages are kept directly in the `Images/`, `Scripts/` and `Styles/` folders within the root directory with capitalised filenames for visibility and consistency.
 
 Examples:
 
