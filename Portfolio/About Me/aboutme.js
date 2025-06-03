@@ -40,3 +40,71 @@ async function loadMathData()
 }
 
 loadMathData();
+
+//Steam Web API Logic
+//-------------------
+const steamAPIKey = '487C291D6E7574FE1A59E1C8433F845E';
+const steamID64 = '76561198100260525';
+const proxy = 'https://corsproxy.io/?';
+
+async function getOwnedGames() {
+  const url = `${proxy}https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${steamAPIKey}&steamid=${steamID64}&include_appinfo=true&include_played_free_games=true`;
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const allGames = data.response.games;
+  if (!allGames || allGames.length === 0) throw new Error("No games found.");
+
+  // Sort games by playtime (descending)
+  allGames.sort((a, b) => b.playtime_forever - a.playtime_forever);
+
+  // Return top 3
+  return allGames.slice(0, 3);
+}
+
+async function getGameDetails(appid) {
+  const url = `${proxy}https://store.steampowered.com/api/appdetails?appids=${appid}&cc=us&l=en`;
+  const response = await fetch(url);
+  const data = await response.json();
+
+  if (data[appid].success) return data[appid].data;
+  return null;
+}
+
+async function displayTopGames() {
+  try {
+    const topGames = await getOwnedGames();
+
+    for (let i = 0; i < topGames.length; i++) {
+      const game = topGames[i];
+      const details = await getGameDetails(game.appid);
+
+      const gameNumber = i + 1;
+      const nameElement = document.getElementById(`game${gameNumber}-name`);
+      const imageElement = document.getElementById(`game${gameNumber}-image`);
+      const hoursElement = document.getElementById(`game${gameNumber}-hours`);
+
+      if (details) {
+        nameElement.textContent = details.name;
+        imageElement.src = details.header_image;
+      } else {
+        nameElement.textContent = "Unknown Game";
+        imageElement.src = "";
+      }
+
+      const hoursPlayed = (game.playtime_forever / 60).toFixed(1);
+      hoursElement.textContent = `Hours played: ${hoursPlayed}`;
+    }
+
+  } catch (error) {
+    console.error('Error loading games:', error);
+    for (let i = 1; i <= 3; i++) {
+      document.getElementById(`game${i}-name`).textContent = 'Error loading game.';
+      document.getElementById(`game${i}-image`).src = '';
+      document.getElementById(`game${i}-hours`).textContent = '';
+    }
+  }
+}
+
+displayTopGames();
+
