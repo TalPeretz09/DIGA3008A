@@ -43,11 +43,112 @@
         </button>
 
         <div class="floating-menu hidden" id="floatingMenu">
-            
+            <a href="#APIs">APIs</a>
+            <a href="#CollapsingNavbar">Collapsing Navbar</a>
+            <a href="#CVstyling">CV Styling</a>
+            <a href="#AltTags">Improved Alt Tags</a>
+            <a href="#FooterIcons">Footer Icons</a>
+            <a href="#FolderStructure">Improved Folder Structure</a>
         </div>
 
         <section class="h-entry e-content">
-            <p>Coming soon...</p>
+            <h2 class="p-name" id="APIs">APIs</h2>
+            <p>
+                I integrated several APIs into my website to enhance interactivity, express my personality, and add a dynamic, playful feel. Each API has a unique purpose and is implemented using asynchronous functions, so the site remains responsive while fetching data in the background. Here's how each API contributes to the site's design and functionality:
+            </p>
+            <h3>Giphy API - GIFs & Stickers</h3>
+            <figure>
+                <img src="../Images/VWgif.png" alt="Vaporwave GIPHY GIF">
+                <figcaption>Vaporwave GIPHY GIF</figcaption>
+            </figure>
+            <p>
+                This API adds fun, animated content that enhances the site's vaporwave and retro theme and makes the site more engaging in general upon entering. It fetches random GIFs and stickers based on a keyword or category (vaporwave), which are then dynamically displayed on the page.
+            </p>
+            <figure>
+                <img src="../Images/VWsticker.png" alt="Vaporwave GIPHY Sticker">
+                <figcaption>Vaporwave GIPHY Sticker</figcaption>
+            </figure>
+            <h3>Numbers API - Math Facts</h3>
+            <figure>
+                <img src="../Images/MathFact.png" alt="Random Math Fact">
+                <figcaption>Random Math Fact</figcaption>
+            </figure>
+            <p>
+                This API brings in educational math trivia, adding a playful yet engineering touch that aligns with my personality. It retrieves a random math fact (as plain text) for a given number, which is then displayed on the page.
+            </p>
+            <h3>DummyImage - Image Generation</h3>
+            <figure>
+                <img src="../Images/GenImageNums.png" alt="Generated Number Image">
+                <figcaption>Generated Number Image</figcaption>
+            </figure>
+            <p>
+                This API generates placeholder images with customisable text to visually represent dynamic data (e.g. the number from the Numbers API). It uses a dynamic URL with specified text (like a number) and colour scheme to generate and display the image in real time.
+            </p>
+            <h3>Steam API - Steam Game Stats</h3>
+            <figure>
+                <img src="../Images/SteamGames.png" alt="Top 3 Steam Games">
+                <figcaption>My Top 3 Most Played Steam Games</figcaption>
+            </figure>
+            <p>
+                This API showcases my gaming interests by pulling real-time stats and information about my most played games. It fetches and displays game details, such as hours played, images, and names for the chosen games.
+            </p>
+            <h3>Yurripe - Anime Quotes</h3>
+            <figure>
+                <img src="../Images/AnimeQuote.png" alt="Random Anime Quote">
+                <figcaption>Random Anime Quote</figcaption>
+            </figure>
+            <p>
+                This API adds a touch of anime culture, which is one of my personal interests, making the site feel more authentic and reflecting my passions. It retrieves a random quote from an anime character and displays it on the site.
+            </p>
+
+            <h2 class="p-name" id="CollapsingNavbar">Collapsing Navbar</h2>
+            <figure>
+                <img src="../Images/CollapsableNavbar.jpg" alt="Collapsable Navbar">
+                <figcaption>Collapsable Navbar Button</figcaption>
+            </figure>
+            <p>
+                To improve accessibility and usability, I added a collapsible navbar on mobile devices. My navbar disappears when the user scrolls down and reappears when they scroll up, which was intended for a cleaner browsing experience. However, I realized this might pose challenges for users with mobility or accessibility issues who might struggle to scroll just enough to dismiss the navbar and continue reading. To address this, I added an “X” button that allows users to easily hide the navbar whenever needed. This makes the site more inclusive and ensures that the content remains accessible and readable, even on smaller screens.
+            </p>
+
+            <h2 class="p-name" id="CVstyling">CV Styling</h2>
+            <figure>
+                <img src="../Images/CVstyling.png" alt="Newly Styled CV Page">
+                <figcaption>Newly Styled CV Page</figcaption>
+            </figure>
+            <p>
+                I significantly refined the styling of my CV page to align with the vaporwave aesthetic of my site while maintaining readability and professionalism. The improved design:
+            </p>
+            <ul>
+                <li>Enhances the overall cohesiveness of the site's theme.</li>
+                <li>Increases text contrast and alignment for better legibility.</li>
+                <li>Provides a more digestible layout for employers and users with accessibility needs.</li>
+            </ul>
+            <p>
+                This ensures that visitors-especially potential employers-can clearly and comfortably review my qualifications and experiences.
+            </p>
+
+            <h2 class="p-name" id="AltTags">Improved Alt Tags</h2>
+            <p>
+                I added meaningful alt tags to many of the images across my site, particularly in the Games section. Each game screenshot now has a descriptive alt tag that explains what's in the image. This is especially important because different screenshots may show different parts of a game (e.g. menus, gameplay, or unique features), and visually impaired users using screen readers deserve to know what each image conveys. This improvement enhances accessibility and makes my site more inclusive.
+            </p>
+
+            <h2 class="p-name" id="FooterIcons">Footer Icons</h2>
+            <figure>
+                <img src="../Images/FooterIcons.png" alt="Footer Icons">
+                <figcaption>Footer Icons</figcaption>
+            </figure>
+            <p>
+                I enhanced the footer by adding social media icons alongside the existing text. This allows users to quickly find and access my social media profiles. For example, potential employers can click the email icon to contact me instantly. I also included ARIA labels to ensure screen readers can identify and announce these icons properly-making them accessible to users who rely on assistive technologies.
+            </p>
+
+            <h2 class="p-name" id="FolderStructure">Improved Folder Structure</h2>
+            <p>
+                I organised all global or reusable scripts, styles, and images into dedicated folders within the root directory. This modular approach:
+            </p>
+            <ul>
+                <li>Simplifies the folder structure.</li>
+                <li>Improves maintainability and reusability across the entire site. I also created a Homepage folder to contain files specific to that page. This change reduces clutter in the root directory, avoids confusion with similarly named folders, and keeps everything neatly compartmentalised which makes the project easier to navigate and scale.</li>
+            </ul>
         </section>
 
         <div class="PN-nav">
