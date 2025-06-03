@@ -4,7 +4,7 @@ const numberImage = document.getElementById("number-image"); //dummyimage API
 async function loadMathData() 
 {
   try {
-    const response = await fetch("https://numbersapi.com/random/math");
+    const response = await fetch("https://api.allorigins.win/raw?url=http://numbersapi.com/random/math");
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.text();
