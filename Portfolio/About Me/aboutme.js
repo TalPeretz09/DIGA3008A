@@ -1,27 +1,29 @@
+//Numbers and DummyImage API Logic
+//--------------------------------
 const fact = document.getElementById("number-fact"); //Numbers API
 const numberImage = document.getElementById("number-image"); //dummyimage API
 
 async function loadMathData() 
 {
   try {
-    const response = await fetch("https://api.allorigins.win/raw?url=http://numbersapi.com/random/math"); //using all origins to bypass mixed protocols
+    const response = await fetch("https://api.allorigins.win/raw?url=http://numbersapi.com/random/math"); //Using all origins to safely fetch data from numbersapi due to non-secure protocol
     if (!response.ok) throw new Error("Network response was not ok");
 
     const data = await response.text();
     fact.textContent = data;
 
-    //Extract the first number from the fact using regex
+    //Extract the first number from the number fact using regex
     const numberMatch = data.match(/\d+/);
     if (numberMatch) 
     {
       const number = numberMatch[0];
 
       //Use dummyimage.com to generate an image with the number in it
-      const imageUrl = `https://dummyimage.com/200x100/a600a6/00d9ff&text=${number}`;
+      const imageUrl = "https://dummyimage.com/200x100/a600a6/00d9ff&text=" + number;
 
-      // Update the image's source
+      //Update the image's source
       numberImage.src = imageUrl;
-      numberImage.alt = `Image displaying the number ${number}`;
+      numberImage.alt = "Image displaying the number " + number;
     } 
     else 
     {
@@ -49,7 +51,7 @@ const proxy = 'https://corsproxy.io/?';
 
 async function getOwnedGames() 
 {
-  const url = `${proxy}https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${steamAPIKey}&steamid=${steamID64}&include_appinfo=true&include_played_free_games=true`;
+  const url = proxy + "https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=" + steamAPIKey + "&steamid=" + steamID64 + "&include_appinfo=true&include_played_free_games=true";
   const response = await fetch(url);
   const data = await response.json();
 
@@ -65,7 +67,7 @@ async function getOwnedGames()
 
 async function getGameDetails(appid) 
 {
-  const url = `${proxy}https://store.steampowered.com/api/appdetails?appids=${appid}&cc=us&l=en`;
+  const url = proxy + "https://store.steampowered.com/api/appdetails?appids=" + appid + "&cc=us&l=en";
   const response = await fetch(url);
   const data = await response.json();
 
@@ -85,9 +87,9 @@ async function displayTopGames()
       const details = await getGameDetails(game.appid);
 
       const gameNumber = i + 1;
-      const nameElement = document.getElementById(`game${gameNumber}-name`);
-      const imageElement = document.getElementById(`game${gameNumber}-image`);
-      const hoursElement = document.getElementById(`game${gameNumber}-hours`);
+      const nameElement = document.getElementById("game" + gameNumber + "-name");
+      const imageElement = document.getElementById("game" + gameNumber + "-image");
+      const hoursElement = document.getElementById("game" + gameNumber + "-hours");
 
       if (details) 
       {
@@ -101,7 +103,7 @@ async function displayTopGames()
       }
 
       const hoursPlayed = (game.playtime_forever / 60).toFixed(1);
-      hoursElement.textContent = `Hours played: ${hoursPlayed}`;
+      hoursElement.textContent = "Hours played: " + hoursPlayed;
     }
 
   } 
@@ -110,12 +112,11 @@ async function displayTopGames()
     console.error('Error loading games:', error);
     for (let i = 1; i <= 3; i++) 
     {
-      document.getElementById(`game${i}-name`).textContent = 'Error loading game.';
-      document.getElementById(`game${i}-image`).src = '';
-      document.getElementById(`game${i}-hours`).textContent = '';
+      document.getElementById("game" + i + "-name").textContent = 'Error loading game.';
+      document.getElementById("game" + i + "-image").src = '';
+      document.getElementById("game" + i + "-hours").textContent = '';
     }
   }
 }
 
 displayTopGames();
-

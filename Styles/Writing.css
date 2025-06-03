@@ -105,7 +105,8 @@ section.h-entry a:hover
 }
 
 /*Previous and Next Buttons Container*/
-.PN-nav { 
+.PN-nav 
+{ 
   display: flex;
   justify-content: space-between;
   align-items: center;

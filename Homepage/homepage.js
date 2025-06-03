@@ -69,7 +69,7 @@ loadAnimeQuote();
 //GIF and Sticker API logic (Giphy)
 //-------------------------------
 const gif = document.getElementById("vaporwave-gif");
-const sticker= document.getElementById("vaporwave-sticker");
+const sticker = document.getElementById("vaporwave-sticker");
 
 const apiKey = "C7imfdvqIh9UNE7gc2JfaXk563qYuPDm"; //API Key from GIPHY Developers
 
@@ -79,7 +79,7 @@ async function loadGif()
   try 
   {
     const response = await fetch(
-      `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=vaporwave&rating=PG-13`
+      "https://api.giphy.com/v1/gifs/random?api_key=" + apiKey + "&tag=vaporwave&rating=PG-13"
     );
 
     if (!response.ok) throw new Error("Network response was not ok");
@@ -102,7 +102,7 @@ async function loadSticker()
   {
     const limit = 15; //Get more stickers
     const response = await fetch(
-      `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=vaporwave&limit=${limit}&rating=PG-13`
+      "https://api.giphy.com/v1/stickers/search?api_key=" + apiKey + "&q=vaporwave&limit=" + limit + "&rating=PG-13"
     );
 
     if (!response.ok) throw new Error("Network response was not ok");
@@ -122,5 +122,5 @@ async function loadSticker()
   }
 }
 
-  loadGif();
-  loadSticker();
+loadGif();
+loadSticker();

@@ -1,4 +1,5 @@
-.grid {
+.grid 
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -7,7 +8,8 @@
     margin: 0 auto;
 }
 
-.card {
+.card 
+{
     display: block;
     background: linear-gradient(145deg, #9B4DFF, #FF77FF);
     border: 2px solid #E1B3FF;
@@ -21,12 +23,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.card:hover 
+{
     transform: translateY(-8px);
     box-shadow: 0 0 20px #FF77FF, 0 0 40px #00FFFF;
 }
 
-.card h2 {
+.card h2 
+{
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
@@ -35,7 +39,8 @@
     text-shadow: 0 0 3px #FF77FF;
 }
 
-.card p {
+.card p 
+{
     font-family: 'Lora', serif;
     text-align: left;
     font-size: 1rem;
