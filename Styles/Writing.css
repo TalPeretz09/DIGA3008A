@@ -123,6 +123,6 @@ section.h-entry a:hover
     color: black;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    cursor: url(Cursors/Link\ Select.cur), pointer;
+    cursor: url(../Cursors/Link\ Select.cur), pointer;
 }
 
