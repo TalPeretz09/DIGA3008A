@@ -62,6 +62,13 @@ figcaption
   transform: scale(1.1); /* slight zoom on hover */
 }
 
+p {
+  text-align: left;
+  max-width: 600px; /* optional, helps readability */
+  margin: 0 auto 1rem auto; /* optional, centers paragraphs within their container */
+}
+
+
 hr 
 {
     width: 80%;
@@ -69,3 +76,61 @@ hr
     margin-left: auto;
     margin-right: auto;
 }
+
+#games-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#games-container > div {
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#games-container > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#games-container h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff77ff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#games-container figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#games-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+#games-container p {
+  font-family: 'Lora', serif;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
