@@ -37,10 +37,62 @@
     <main>
         <section class="h-entry">
             <article>
-                <h2 class="p-name"></h2>
+                <h2 class="p-name">Final Reflection on the Implementation of the Website</h2>
                     <time class="dt-published" datetime=""></time>
                     <div class="e-content">
-                        <p>Coming soon...</p>
+                        <h3>Folder Structure</h3>
+                        <p>
+                            My folder structure perfectly reflects the hierarchal information structure of my content. Beginning with my root folders, I created individual folders for my global and multi-purpose JS scripts, CSS styles, and images. Additionally, I have individual folders for each of my primary webpages (Blogs, Designs, Essays, Portfolio, and Contact). All content specifically relating to the homepage has also been placed into its own respective folder within the root folder. This was done to separate homepage-specific files and folders from the global and multi-purpose files and folders in order to prevent clutter. While the homepage is at a higher level within my hierarchal structure compared to my five primary webpages, the inclusion of the homepage folder allows the root folders to remain modular and clutter free. The homepage HTML also remains within the main root folder which maintains the hierarchal folder structure.
+                            Contained within each of the primary webpage folders are their respective HTML files, as well as any webpage specific scripts, styles, images and sub-page folders. Each of the subpages remain consistent regarding their naming convention, providing an easy way of creating new subpages if required. Varying file types are neatly organised within individual folders - also with consistent naming conventions. Everything is neatly organised and modular, which makes referencing or adding specific files simple and straightforward.
+                        </p>
+
+                        <h3>Semantic Markup</h3>
+                        <p>
+                            My markup provides sufficient context and information to the browser which improves both usability and accessibility. I have used appropriate HTML tags such as header for all elements within the top portion of a webpage, main for the primary elements of the webpage, and footer for all the elements within the bottom-most portion of a webpage. I also made use of the div and section tags to group relating elements on a page.
+                            Additionally, I made use of tags such as article, nav, ul, button, figure, figcaption, time and headings h1 to h3 to mark-up elements of a particular function or type.
+                            Aria labels were used for non-text descriptive items such as buttons or icons. Alt tags were used to describe all images. Both aria labels and alt tags provide great markup for accessibility purposes, particularly for those with visual impairments.
+                            Sufficient micro formatting was also used on most elements to provide more detailed explanations of specific content.
+                        </p>
+
+                        <h3>Metadata</h3>
+                        <p>
+                            Sufficient metadata has been implemented on every webpage. This includes the defined character encoding for the HTML document, the viewport settings to enable responsive design to match the respective device's screen width, the website author (myself), a description of the webpage, a title for the webpage, and a favicon. These pieces of metadata help guide the browser in interpreting my content as well as improving SEO optimisation and branding for my site overall. Improving SEO optimisation ensures that my content is discoverable and presented appropriately on various platforms and devices.
+                        </p>
+
+                        <h3>CSS</h3>
+                        <p>
+                            I have avoided inline styles and instead used external CSS files to create consistent styling throughout my website. This separation of files between content (HTML) and presentation (CSS) allows for maintainability and easier updates and modifications.
+                            My CSS is modular and maintainable, with reusable classes and a consistent naming convention that aligns with my folder structure. Styles are logically organised into global, multi-purpose, and page-specific stylesheets. This allows for the sheets to remain scalable and easily expanded upon in the future.
+                            I implemented responsive layouts using media queries and relative units. This was done to allow my website to adapt to varying screen sizes and devices. This provides a consistent experience for users.
+                        </p>
+
+                        <h3>JavaScript</h3>
+                        <p>
+                            I have expressed interaction points and functionality using JavaScript through event handling and DOM manipulation. For example, I use event listeners to handle user interactions like button clicks within a lightbox gallery, and I manipulate the DOM dynamically to update content based on fetch requests from my various APIs.
+                            Repeated interaction points and functionalities have been separated out into reusable functions and modules where appropriate. This modular approach prevents code duplication and improves maintainability.
+                            I have avoided inline scripting and instead linked to external JS files similar to my CSS files, maintaining a clear separation of concerns between structure and behavior. Additionally, I use asynchronous requests where needed to reduce redownloading and improve performance and user experience.
+                        </p>
+
+                        <h3>Weaknesses & Improvements</h3>
+                        <p>
+                            While I'm really happy with how the site turned out overall, there are a few areas that could be improved upon. On some of the pages with a lot more content-especially those that are text-heavy-I think it would have made more sense to embed external text files instead of writing everything directly into the HTML. Doing this would've made the code a lot more modular and easier to update or correct later. It also would've helped with formatting, like separating paragraphs more cleanly instead of relying on line breaks or spacing tricks in the HTML.
+                            Related to those longer pages, better scroll functionality could have also been implemented. Some sections require a lot of scrolling, and while the content is still accessible, it can feel a bit tedious to navigate through. Maybe adding something like a sticky navigation or scroll progress indicator would have helped the experience feel more fluid.
+                            From a styling point of view, I do think some parts of my CSS could have been better optimised. There's a bit of repetition in some of the styles that could've been cleaned up with more reusable classes or by expanding my global stylesheet to handle more shared elements. I also realise I could have added more animations or transitions in certain areas to help increase user engagement and bring a bit more life to the site. Right now, the design is solid and visually appealing, but a few subtle motion effects could've pushed the interactivity a little further.
+                        </p>
+
+                        <h3>Strengths</h3>
+                        <p>
+                            One of the biggest strengths of my site is how efficiently everything is coded. All the functions I've implemented across the site work exactly as intended, and the user experience is smooth, intuitive, and responsive. The navigation is especially strong, with consistent feedback and clear pathways through every page. Accessibility has also been taken seriously. I've included “back to top”, “next”, and “previous” buttons that are clearly labelled using ARIA attributes, which enhances screen reader compatibility. For longer vertically scrolling pages, I've included a hamburger menu for cleaner navigation, and any pages with large image sets make use of a lightbox gallery to improve usability and presentation.
+                            What really stands out as the best strength of the site, though, is the visual aesthetic. The entire site follows a consistent vaporwave theme, which adds a modern yet nostalgic identity to the website. I've applied this theme across every page, maintaining consistency in layout, colour palette, and mood. This not only helps with branding and visual appeal but also supports accessibility-since the high contrast colour choices make it easier for users with visibility impairments to read text and view images clearly.
+                            Content-wise, the site is filled with personal material and functions well as a portfolio. It showcases my games, fight stick designs, CV, and general information about who I am and what I do. The Blogs, Essays, and Designs sections also go a bit deeper, including my own thoughts on web design, accessibility, digital colonialism, and the internet in general. Each of these sections includes a primary selection page made up of neatly organised cards, which makes it easy for users to browse and choose what they want to read or explore.
+                            I've also made sure that potential employers or collaborators can reach me easily. My contact details are clearly listed on the dedicated Contacts page, and there are also clickable social media icons in the footer across all pages for quick access.
+                            The site works well on different devices too. I've used media queries to ensure it's responsive, and I've taken accessibility concerns specific to smaller screens into account-making sure everything remains usable and readable no matter the device. I've also included five different APIs across the site. These not only add unique interactive features but also help express my personal interests and add an artistic edge to the overall design. They also contribute to a more dynamic experience for users every time a page reloads.
+                        </p>
+
+                        <h3>Conclusion</h3>
+                        <p>
+                            Overall, I'm very proud of the final result. While there are certain improvements which can be made to the site's functionality and user experience, I don't believe that it detracts much from the current iteration of the site. The site is not just functional-it's expressive, accessible, and visually engaging. I definitely see it as a solid foundation to keep building on, especially as a professional portfolio and digital CV moving forward.
+                        </p>
                     </div>
             </article>
         </section>

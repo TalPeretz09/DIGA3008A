@@ -54,7 +54,7 @@ h1
  text-align: center;
 }
 
-/* Responsive tweaks */
+/*Media Query*/
 @media screen and (max-width: 768px) {
   #contact {
     padding: 2rem 1rem;

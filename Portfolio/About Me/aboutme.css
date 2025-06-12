@@ -45,7 +45,7 @@ figcaption
   align-items: center;
   gap: 1.5rem;
   padding: 1rem 0;
-  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  flex-wrap: wrap; /*allows for wrapping on smaller screens */
 }
 
 .p-languages figure 
@@ -63,14 +63,14 @@ figcaption
 
 .p-languages img:hover 
 {
-  transform: scale(1.1); /* slight zoom on hover */
+  transform: scale(1.1); /*slight zoom on hover */
 }
 
 p 
 {
   text-align: left;
-  max-width: 600px; /* optional, helps readability */
-  margin: 0 auto 1rem auto; /* optional, centers paragraphs within their container */
+  max-width: 600px;
+  margin: 0 auto 1rem auto;
 }
 
 

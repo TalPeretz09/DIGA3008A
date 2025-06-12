@@ -43,23 +43,3 @@ hr
     margin: 1rem auto;
     text-align: center;
 }
-
-#fsd-nav {
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    border: 2px solid #9B4DFF;
-    border-radius: 0.5rem;
-    background-color: #E1B3FF;
-    color: black;
-    box-shadow: 0 0 10px #9B4DFF;
-    cursor: pointer;
-}
-
-label[for="fsd-nav"] {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1rem;
-    color: black;
-    margin-right: 0.5rem;
-}
