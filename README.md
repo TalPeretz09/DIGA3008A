@@ -1,5 +1,7 @@
 # 💻 Portfolio Website – Tal Peretz
 
+NOTE: The Steam API on the 'about me' page may need to be reloaded
+
 This is the repository for my personal **portfolio website**, built using **HTML, CSS, and JavaScript**.  
 It showcases my work as a **Game Design and Electrical Engineering student** at the **University of the Witwatersrand**.
 
